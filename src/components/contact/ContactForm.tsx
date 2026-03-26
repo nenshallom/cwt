@@ -9,13 +9,14 @@ import {
   FiFacebook,
   FiTwitter,
   FiInstagram,
-  FiGithub,
+  FiLinkedin,
   FiSend
 } from "react-icons/fi";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 
 export default function ContactForm() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/50 to-white pt-24 pb-16 lg:pt-16 lg:pb-24">
+    <section className="relative overflow-hidden bg-white pb-16 lg:pt-16 lg:pb-24">
       <div className="mx-auto max-w-[95rem] px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* HEADER AREA */}
@@ -46,31 +47,31 @@ export default function ContactForm() {
             
             {/* Email Card */}
             <div className="flex items-start gap-4 rounded-2xl bg-white p-6 shadow-sm border border-gray-100">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-[#0ea5e9]">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-50 text-purple-700">
                 <FiMail className="h-6 w-6" />
               </div>
               <div>
                 <h4 className="font-syne text-lg font-bold text-gray-900">Email Us</h4>
-                <p className="mt-1 font-inter text-sm font-medium text-gray-900">info@codewarriors.tech</p>
+                <p className="mt-1 font-inter text-sm font-medium text-gray-900">codewarriorstech@gmail.com</p>
                 <p className="mt-1 font-inter text-xs text-gray-500">We reply within 24 hours</p>
               </div>
             </div>
 
             {/* Call Card */}
             <div className="flex items-start gap-4 rounded-2xl bg-white p-6 shadow-sm border border-gray-100">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-[#0ea5e9]">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-50 text-purple-700">
                 <FiPhoneCall className="h-6 w-6" />
               </div>
               <div>
                 <h4 className="font-syne text-lg font-bold text-gray-900">Call Us</h4>
-                <p className="mt-1 font-inter text-sm font-medium text-gray-900">+234 XXX XXX XXXX</p>
+                <p className="mt-1 font-inter text-sm font-medium text-gray-900">+234 805 657 1766</p>
                 <p className="mt-1 font-inter text-xs text-gray-500">Mon - Fri, 9am - 6pm WAT</p>
               </div>
             </div>
 
             {/* Visit Card */}
             <div className="flex items-start gap-4 rounded-2xl bg-white p-6 shadow-sm border border-gray-100">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-[#0ea5e9]">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-50 text-purple-700">
                 <FiMapPin className="h-6 w-6" />
               </div>
               <div>
@@ -84,8 +85,8 @@ export default function ContactForm() {
             <div className="mt-4">
               <h4 className="font-syne text-lg font-bold text-gray-900 mb-4">Follow Us</h4>
               <div className="flex gap-4">
-                {[FiFacebook, FiTwitter, FiInstagram, FiGithub].map((Icon, index) => (
-                  <a key={index} href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white border border-gray-200 text-gray-600 transition-all hover:bg-[#0ea5e9] hover:text-white hover:border-[#0ea5e9] shadow-sm">
+                {[FiFacebook, FiTwitter, FiInstagram, FaTiktok, FaYoutube, FiLinkedin].map((Icon, index) => (
+                  <a key={index} href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white border border-gray-200 text-gray-600 transition-all hover:bg-purple-700 hover:text-white shadow-sm">
                     <Icon className="h-4 w-4" />
                   </a>
                 ))}
@@ -102,28 +103,28 @@ export default function ContactForm() {
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="mb-2 block font-inter text-sm font-medium text-gray-700">Full Name <span className="text-red-500">*</span></label>
-                  <input type="text" id="name" placeholder="John Doe" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-[#0ea5e9] focus:bg-white focus:ring-1 focus:ring-[#0ea5e9]" required />
+                  <input type="text" id="name" placeholder="John Doe" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" required />
                 </div>
                 <div>
                   <label htmlFor="email" className="mb-2 block font-inter text-sm font-medium text-gray-700">Email Address <span className="text-red-500">*</span></label>
-                  <input type="email" id="email" placeholder="john@example.com" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-[#0ea5e9] focus:bg-white focus:ring-1 focus:ring-[#0ea5e9]" required />
+                  <input type="email" id="email" placeholder="john@example.com" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" required />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="phone" className="mb-2 block font-inter text-sm font-medium text-gray-700">Phone Number <span className="text-gray-400 font-normal">(Optional)</span></label>
-                  <input type="tel" id="phone" placeholder="+234 XXX XXXX" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-[#0ea5e9] focus:bg-white focus:ring-1 focus:ring-[#0ea5e9]" />
+                  <input type="tel" id="phone" placeholder="+234 XXX XXXX" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" />
                 </div>
                 <div>
                   <label htmlFor="company" className="mb-2 block font-inter text-sm font-medium text-gray-700">Company <span className="text-gray-400 font-normal">(Optional)</span></label>
-                  <input type="text" id="company" placeholder="Your company name" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-[#0ea5e9] focus:bg-white focus:ring-1 focus:ring-[#0ea5e9]" />
+                  <input type="text" id="company" placeholder="Your company name" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="service" className="mb-2 block font-inter text-sm font-medium text-gray-700">Service Interest</label>
-                <select id="service" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-[#0ea5e9] focus:bg-white focus:ring-1 focus:ring-[#0ea5e9] appearance-none cursor-pointer">
+                <select id="service" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400 appearance-none cursor-pointer">
                   <option>Select a service</option>
                   <option>Software Development</option>
                   <option>SaaS Solutions</option>
@@ -135,11 +136,11 @@ export default function ContactForm() {
 
               <div>
                 <label htmlFor="message" className="mb-2 block font-inter text-sm font-medium text-gray-700">Message <span className="text-red-500">*</span></label>
-                <textarea id="message" rows={5} placeholder="Tell us about your project" className="w-full resize-none rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-[#0ea5e9] focus:bg-white focus:ring-1 focus:ring-[#0ea5e9]" required></textarea>
+                <textarea id="message" rows={5} placeholder="Tell us about your project" className="w-full resize-none rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" required></textarea>
               </div>
 
               {/* Submit Button */}
-              <button type="submit" className="group flex w-full items-center justify-center gap-2 rounded-lg bg-[#0ea5e9] px-8 py-4 font-inter text-base font-bold text-white shadow-md transition-all hover:bg-blue-600 hover:shadow-lg">
+              <button type="submit" className="group flex w-full items-center justify-center gap-2 rounded-lg bg-purple-700 px-8 py-4 font-inter text-base font-bold text-white shadow-md transition-all hover:bg-purple-500 hover:shadow-lg">
                 Send Message
                 <FiSend className="h-5 w-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
               </button>

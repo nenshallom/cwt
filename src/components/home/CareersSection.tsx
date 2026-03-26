@@ -147,7 +147,7 @@ export default function CareersSection() {
                     <p className="text-xs">send your resume</p>
                   </div>
                   
-                  <div className="hidden sm:flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-blue-600 transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-blue-600 group-hover:text-white">
+                  <div className="hidden sm:flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-purple-700 transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-purple-500 group-hover:text-white">
                     
                     <FiArrowRight className="h-5 w-5" />
                   </div>
@@ -159,7 +159,7 @@ export default function CareersSection() {
             ))}
 
             {/* View All Positions Link */}
-            <div className="mt-4 text-center sm:text-right">
+            <div className=" hidden mt-4 text-center sm:text-right">
               <Link 
                 href="/"
                 className="inline-flex items-center gap-2 font-inter text-base font-semibold text-white transition-colors group px-3 py-4 bg-blue-500 rounded-lg"

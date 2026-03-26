@@ -79,8 +79,8 @@ export default function PortfolioGrid() {
               onClick={() => setActiveCategory(category)}
               className={`rounded-full px-6 py-2.5 font-inter text-sm font-semibold transition-all duration-300 ${
                 activeCategory === category
-                  ? "bg-blue-500 text-white shadow-md" // Active state
-                  : "bg-gray-50 text-gray-600 hover:bg-gray-100 hover:text-blue-600" // Inactive state
+                  ? "bg-purple-700 text-white shadow-md" // Active state
+                  : "bg-gray-50 text-gray-600 hover:bg-gray-100 hover:text-purple-700" // Inactive state
               }`}
             >
               {category}
@@ -118,7 +118,7 @@ export default function PortfolioGrid() {
 
               {/* Card Content Area */}
               <div className="flex flex-1 flex-col p-6 sm:p-8">
-                <h3 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-blue-600">
+                <h3 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-purple-700">
                   {project.title}
                 </h3>
                 <p className="mb-6 flex-1 font-inter text-sm text-gray-600 leading-relaxed">

@@ -68,12 +68,12 @@ export default function ContactFAQ() {
                   onClick={() => toggleFAQ(index)}
                   className="flex w-full items-center justify-between gap-6 p-6 text-left sm:p-8"
                 >
-                  <span className={`font-syne text-lg font-bold transition-colors ${isOpen ? "text-[#0ea5e9]" : "text-gray-900"}`}>
+                  <span className={`font-syne text-lg font-bold transition-colors ${isOpen ? "text-purple-700" : "text-gray-900"}`}>
                     {faq.question}
                   </span>
                   
                   {/* The Rotating Icon Box */}
-                  <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-all duration-300 ${isOpen ? "bg-[#0ea5e9] text-white rotate-180" : "bg-gray-100 text-gray-500"}`}>
+                  <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-all duration-300 ${isOpen ? "bg-black text-white rotate-180" : "bg-gray-100 text-gray-500"}`}>
                     <FiChevronDown className="h-5 w-5" />
                   </div>
                 </button>

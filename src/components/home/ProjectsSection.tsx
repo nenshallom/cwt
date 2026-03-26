@@ -84,11 +84,11 @@ export default function ProjectsSection() {
 
               {/* Text Content Container */}
               <div className="p-6 sm:p-8">
-                <span className="inline-block rounded-full bg-blue-50 px-3 py-1 font-inter text-xs font-semibold tracking-wide text-blue-600 mb-4">
+                <span className="inline-block rounded-full bg-purple-400 px-3 py-1 font-inter text-xs font-semibold tracking-wide text-black mb-4">
                   {project.category}
                 </span>
 
-                <h4 className="mb-2 font-syne text-2xl font-bold text-gray-900 transition-colors group-hover:text-blue-600">
+                <h4 className="mb-2 font-syne text-2xl font-bold text-gray-900 transition-colors group-hover:text-purple-700">
                   {project.title}
                 </h4>
 
@@ -105,7 +105,7 @@ export default function ProjectsSection() {
         <div className="flex justify-center mt-12 w-full">
             <Link 
               href="/portfolio"
-              className="group inline-flex items-center gap-2 rounded-lg bg-blue-600 px-8 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-blue-700"
+              className="group inline-flex items-center gap-2 rounded-lg bg-purple-700 px-8 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-purple-500"
             >
                View All Projects
                <FiArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />

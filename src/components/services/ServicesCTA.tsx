@@ -28,7 +28,7 @@ export default function ServicesCTA() {
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row sm:gap-6">
           <Link
             href="/contact"
-            className="group inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-bold text-blue-600 shadow-md transition-all hover:bg-gray-50 hover:shadow-lg"
+            className="group inline-flex items-center justify-center rounded-lg bg-purple-700 px-8 py-4 text-base font-bold text-white shadow-md transition-all hover:bg-purple-500 hover:shadow-lg"
           >
             Start Your Project
             <FiArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />

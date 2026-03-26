@@ -52,7 +52,7 @@ export default function Header() {
           <div className="hidden lg:block">
             <Link
               href="/contact"
-              className="rounded-md bg-blue-600 px-6 py-2.5 text-md font-bold text-white shadow-sm transition hover:bg-blue-500"
+              className="rounded-md bg-purple-700 px-6 py-2.5 text-md font-bold text-white shadow-sm transition hover:bg-purple-500"
             >
               Get Started
             </Link>

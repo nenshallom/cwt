@@ -60,7 +60,7 @@ export default async function ExpertisePage({
     }
 
   return (
-    <div className="bg-gray-50 min-h-screen pb-24 pt-24">
+    <div className="bg-gray-50 min-h-screen pb-24 pt-20">
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
         
         {/* Back Button & Breadcrumb */}
@@ -73,7 +73,7 @@ export default async function ExpertisePage({
         </Link>
 
         {/* Page Heading */}
-        <div className="mb-12">
+        <div className="mb-20">
           <h1 className="font-syne text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
             {expertise.heading}
           </h1>

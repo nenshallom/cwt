@@ -31,7 +31,7 @@ export default function PortfolioCTA() {
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
           <Link
             href="/contact"
-            className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg bg-blue-600 px-8 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:bg-blue-700"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg bg-purple-700 px-8 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:bg-purple-500"
           >
             Start a Project
           </Link>
@@ -55,7 +55,7 @@ export default function PortfolioCTA() {
             {industries.map((industry, index) => (
               <span 
                 key={index} 
-                className="font-syne text-lg font-bold text-slate-300 transition-colors duration-300 hover:text-blue-500 cursor-default"
+                className="font-syne text-lg font-bold text-slate-300 transition-colors duration-300 cursor-default"
               >
                 {industry}
               </span>

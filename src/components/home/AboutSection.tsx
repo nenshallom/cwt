@@ -90,7 +90,7 @@ export default function AboutSection() {
             <div className="mt-10">
               <Link
                 href="/about"
-                className="group inline-flex items-center gap-2 font-inter text-base font-semibold text-white transition-colors hover:text-blue-700 py-2 px-3 bg-blue-500 rounded-lg"
+                className="group inline-flex items-center gap-2 font-inter text-base font-semibold text-white transition-colors hover:bg-purple-500 py-2 px-3 bg-purple-700 rounded-lg"
               >
                 Learn More About Us
                 <FiArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />

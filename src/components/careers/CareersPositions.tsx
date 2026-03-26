@@ -168,13 +168,13 @@ export default function CareersPositions() {
               onClick={() => setActiveTab(dept)}
               className={`flex items-center gap-2 rounded-full px-5 py-2.5 font-inter text-sm font-semibold transition-all duration-300 ${
                 activeTab === dept
-                  ? "bg-blue-600 text-white shadow-md"
-                  : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300 hover:text-blue-600"
+                  ? "bg-purple-700 text-white shadow-md"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-purple-300 hover:text-purple-600"
               }`}
             >
               {dept}
               <span className={`flex h-5 items-center justify-center rounded-full px-2 text-xs ${
-                activeTab === dept ? "bg-blue-500 text-white" : "bg-gray-100 text-gray-500"
+                activeTab === dept ? "bg-purple-500 text-white" : "bg-gray-100 text-gray-500"
               }`}>
                 {getJobCount(dept)}
               </span>
@@ -199,29 +199,29 @@ export default function CareersPositions() {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
                   <div className="flex-1">
                     <div className="flex flex-wrap items-start  gap-4 mb-2">
-                      <h4 className={`font-syne text-2xl font-bold transition-colors ${isOpen ? "text-blue-600" : "text-gray-900 group-hover:text-blue-600"}`}>
+                      <h4 className={`font-syne text-2xl font-bold transition-colors ${isOpen ? "text-purple-700" : "text-gray-900 group-hover:text-purple-700"}`}>
                         {job.title}
                       </h4>
-                      <span className="shrink-0 rounded-full bg-green-100 px-3 py-1 font-inter text-xs font-semibold tracking-wide text-green-700">
+                      <span className="shrink-0 rounded-full bg-purple-100 px-3 py-1 font-inter text-xs font-semibold tracking-wide text-purple-700">
                         {job.type}
                       </span>
                     </div>
                     
                     <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3 font-inter text-sm font-medium text-gray-500">
                       <div className="flex items-center gap-2">
-                        <FiBriefcase className="h-4 w-4 text-blue-600" />
+                        <FiBriefcase className="h-4 w-4 text-purple-400" />
                         {job.department}
                       </div>
                       <div className="flex items-center gap-2">
-                        <FiMapPin className="h-4 w-4 text-blue-600" />
+                        <FiMapPin className="h-4 w-4 text-purple-400" />
                         {job.location}
                       </div>
                       <div className="flex items-center gap-2">
-                        <FiClock className="h-4 w-4 text-blue-600" />
+                        <FiClock className="h-4 w-4 text-purple-400" />
                         {job.experience}
                       </div>
                       <div className="flex items-center gap-2">
-                        <FiDollarSign className="h-4 w-4 text-blue-600" />
+                        <FiDollarSign className="h-4 w-4 text-purple-400" />
                         {job.salary}
                       </div>
                     </div>
@@ -232,7 +232,7 @@ export default function CareersPositions() {
                       Posted {job.posted}
                     </span>
                     {/* Rotating Chevron */}
-                    <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gray-50 text-gray-500 transition-all duration-300 group-hover:bg-blue-50 group-hover:text-blue-600 ${isOpen ? "rotate-180 bg-blue-50 text-blue-600" : ""}`}>
+                    <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gray-50 text-gray-500 transition-all duration-300 group-hover:bg-purple-50 group-hover:text-purple-600 ${isOpen ? "rotate-180 bg-blue-50 text-purple-600" : ""}`}>
                       <FiChevronDown className="h-5 w-5" />
                     </div>
                   </div>
@@ -263,7 +263,8 @@ export default function CareersPositions() {
                     {/* Apply Now Button */}
                     <div className="flex justify-start">
                       <Link 
-                        href="/contact"
+                        href="mailto:codewarriorstech@gmail.com"
+        
                         onClick={(e) => e.stopPropagation()}
                         className="group inline-flex items-center gap-2 font-inter text-base font-bold px-4 py-3 bg-blue-600 text-white hover:text-blue-700 transition-colors rounded-xl"
                       >

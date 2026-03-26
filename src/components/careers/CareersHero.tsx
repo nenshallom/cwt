@@ -47,7 +47,7 @@ export default function CareersHero() {
             <div className="mt-8">
               <Link
                 href="#open-positions"
-                className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-blue-700 shadow-sm"
+                className="inline-flex items-center justify-center rounded-lg bg-purple-700 px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-purple-500 shadow-sm"
               >
                 View Open Positions
               </Link>
@@ -59,7 +59,7 @@ export default function CareersHero() {
             {/* Main Image Container */}
             <div className="relative w-full aspect-[4/3] rounded-3xl bg-gray-200 shadow-2xl overflow-hidden border border-white">
                <Image 
-                 src="/careers-hero.jpg" 
+                 src="/career-hero.png" 
                  alt="Team collaborating" 
                  layout="fill" 
                  objectFit="cover" 

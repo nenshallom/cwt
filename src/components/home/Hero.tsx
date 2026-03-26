@@ -32,7 +32,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
                 href="https://calendly.com/codewarriorstech/new-meeting"
-                className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-blue-700 shadow-sm"
+                className="inline-flex items-center justify-center rounded-lg bg-purple-700 px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-purple-500 shadow-sm"
               >
                 Book a free Consultation
                 <FiArrowRight className="ml-2 h-5 w-5" />

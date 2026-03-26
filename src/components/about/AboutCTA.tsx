@@ -36,7 +36,7 @@ export default function AboutCTA() {
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
           <Link
             href="/contact"
-            className="inline-flex min-w-[180px] items-center justify-center rounded-lg bg-[#0ea5e9] px-8 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-blue-600 hover:-translate-y-1"
+            className="inline-flex min-w-[180px] items-center justify-center rounded-lg bg-purple-700 px-8 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-purple-500 hover:-translate-y-1"
           >
             Get in Touch
           </Link>

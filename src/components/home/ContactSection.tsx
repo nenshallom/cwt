@@ -58,7 +58,7 @@ export default function ContactSection() {
                   href={info.href}
                   className="group flex items-start gap-4 p-4 rounded-xl transition-colors hover:bg-white hover:shadow-sm border border-transparent hover:border-gray-100"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-100 text-purple-500 transition-colors group-hover:bg-purple-700 group-hover:text-white">
                     {info.icon}
                   </div>
                   <div>
@@ -70,7 +70,7 @@ export default function ContactSection() {
             </div>
             <Link 
             href="/"
-            className="flex gap-3 items-center font-bold text-blue-500"
+            className="flex gap-3 items-center font-bold text-black hover:text-purple-700 mt-4"
             >Visit full contact page
             <FiArrowRight />
             </Link>
@@ -134,7 +134,7 @@ export default function ContactSection() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="group flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 px-8 py-4 text-base font-semibold text-white shadow-md transition-all hover:bg-blue-700"
+                className="group flex w-full items-center justify-center gap-2 rounded-lg bg-purple-700 px-8 py-4 text-base font-semibold text-white shadow-md transition-all hover:bg-purple-500"
               >
                 Send Message
                 <FiSend className="h-5 w-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
