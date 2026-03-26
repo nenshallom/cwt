@@ -83,7 +83,7 @@ export default function CareersSection() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           
           {/* LEFT COLUMN: The Pitch & Perks */}
-          <div className="flex flex-col justify-center">
+          <div className=" ">
             <h2 className="font-syne text-sm font-bold uppercase w-fit tracking-wider text-blue-600 py-2 px-3 bg-blue-500/20 rounded-lg mb-4">
               We're Hiring
             </h2>
@@ -115,7 +115,7 @@ export default function CareersSection() {
           </div>
 
           {/* RIGHT COLUMN: Job Postings */}
-          <div className="flex flex-col gap-4 border">
+          <div className="flex flex-col gap-4">
             {jobs.map((job, index) => (
               <Link 
                 key={index}
@@ -142,7 +142,11 @@ export default function CareersSection() {
 
                 {/* Arrow Icon that slides right on hover */}
                 <div className="flex gap-3 items-center">
-                  <span className="py-1 px-2 bg-green-500/20 rounded-lg text-sm">{job.type}</span>
+                  <div className="flex flex-col items-start gap-2">
+                    <span className="py-1 px-2 bg-green-500/20 group-hover:bg-green-500/80 group-hover:text-white rounded-lg text-sm">{job.type}</span>
+                    <p className="text-xs">send your resume</p>
+                  </div>
+                  
                   <div className="hidden sm:flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-blue-600 transition-transform duration-300 group-hover:translate-x-1 group-hover:bg-blue-600 group-hover:text-white">
                     
                     <FiArrowRight className="h-5 w-5" />
