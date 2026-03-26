@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body::-webkit-scrollbar{
+  width: 0;
+}
+  
+  .mil_1{
+    line-height: 150%;
+}
+
+.filter{
+  filter: grayscale(100%);
+}
+
+.tran_filter{
+  filter: grayscale(100%);
+  transform: translateZ(20px)
+}
+
+.tran_filter:hover{
+  filter: grayscale(0%);
+}
+
+.red-line {
+  border: 1px solid red;
+  height: 1px;
+}
+
+.deep_bg{
+  background: rgba(18,24,32,.05);
+}
+
+.form_btm{
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.mil{
+  color: rgb(18, 24, 32);
+}
+
+.font{
+  font-weight: 600;
+}
+
+.font1{
+  font-weight: 500;
+}
+
+.mil_db{
+background-color: rgba(18,24,32,.05);
+}

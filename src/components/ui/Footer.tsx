@@ -1,0 +1,147 @@
+"use client";
+
+import Link from "next/link";
+import { 
+  FiFacebook,  
+  FiInstagram, 
+  FiLinkedin, 
+  FiMapPin, 
+  FiMail, 
+  FiPhone
+} from "react-icons/fi";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-slate-900 text-slate-300">
+      
+      {/* 1. NEWSLETTER SECTION */}
+      <div className="border-b border-slate-800">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:px-8">
+          <div>
+            <h3 className="font-syne text-2xl font-bold text-white">Stay Updated</h3>
+            <p className="mt-2 font-inter text-sm text-slate-400">
+              Get the latest news and insights delivered to your inbox.
+            </p>
+          </div>
+          <form className="mt-6 sm:flex lg:mt-0 lg:w-full lg:max-w-md" onSubmit={(e) => e.preventDefault()}>
+            <input
+              type="email"
+              required
+              placeholder="Enter your email"
+              className="w-full rounded-md border border-slate-700 bg-slate-800 px-4 py-3 text-white placeholder-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 sm:max-w-xs"
+            />
+            <button
+              type="submit"
+              className="mt-3 w-full rounded-md bg-blue-500 px-6 py-3 font-inter text-sm font-semibold text-white transition-colors hover:bg-blue-600 sm:ml-3 sm:mt-0 sm:w-auto shrink-0"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* 2. MAIN FOOTER CONTENT (4 Columns) */}
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          
+          {/* Column 1: Brand & Socials */}
+          <div className="space-y-6">
+            <Link href="/" className="flex items-center gap-2">
+              <span>
+                <img src="/navLogo.jpeg" alt="Code Warriors Logo" className="h-12 w-12 rounded-lg" />
+              </span>
+              <span className="font-syne text-xl font-bold text-white">Code Warriors</span>
+            </Link>
+            <p className="font-inter text-sm text-slate-400 leading-relaxed max-w-xs">
+              Building innovative software solutions that empower businesses to thrive in the digital age.
+            </p>
+            <div className="flex gap-4 flex-wrap">
+              <a href="https://www.facebook.com/codewariors02" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-blue-600 hover:text-white">
+                <FiFacebook className="h-4 w-4" />
+              </a>
+              <a href="https://x.com/codewarriors02?t=YsAvpmq0Uix4pQETxEKMTw&s=09 " className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-blue-600 hover:text-white">
+                <FaXTwitter className="h-4 w-4" /> {/* Represents X */}
+              </a>
+              <a href="https://www.instagram.com/code_warriors_team_ " className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-blue-600 hover:text-white">
+                <FiInstagram className="h-4 w-4" />
+              </a>
+              <a href="https://www.linkedin.com/company/code-warriors-tech/" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-blue-600 hover:text-white">
+                <FiLinkedin className="h-4 w-4" />
+              </a>
+              <a href="https://www.tiktok.com/@code_warriors_team" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-blue-600 hover:text-white">
+                <FaTiktok className="h-4 w-4" />
+              </a>
+              <a href=" https://youtube.com/@codewarriorstech" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-blue-600 hover:text-white">
+                <FaYoutube className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Column 2: Quick Links */}
+          <div>
+            <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Quick Links</h4>
+            <ul className="space-y-4 font-inter text-sm text-slate-400">
+              <li><Link href="/" className="transition-colors hover:text-blue-400">Home</Link></li>
+              <li><Link href="/about" className="transition-colors hover:text-blue-400">About</Link></li>
+              <li><Link href="/services" className="transition-colors hover:text-blue-400">Services</Link></li>
+              <li><Link href="/portfolio" className="transition-colors hover:text-blue-400">Portfolio</Link></li>
+              <li><Link href="/careers" className="transition-colors hover:text-blue-400">Careers</Link></li>
+              <li><Link href="/contact" className="transition-colors hover:text-blue-400">Contact</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 3: Services */}
+          <div>
+            <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Services</h4>
+            <ul className="space-y-4 font-inter text-sm text-slate-400">
+              <li><Link href="/services" className="transition-colors hover:text-blue-400">Software Development</Link></li>
+              <li><Link href="/services" className="transition-colors hover:text-blue-400">SaaS Solutions</Link></li>
+              <li><Link href="/services" className="transition-colors hover:text-blue-400">Android & IOS Apps</Link></li>
+              <li><Link href="/services" className="transition-colors hover:text-blue-400">QA and Testing</Link></li>
+              <li><Link href="/services" className="transition-colors hover:text-blue-400">AI & Machine Learning</Link></li>
+              <li><Link href="/services" className="transition-colors hover:text-blue-400">Cybersecurity</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 4: Contact Us */}
+          <div>
+            <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Contact Us</h4>
+            <ul className="space-y-4 font-inter text-sm text-slate-400">
+              <li className="flex items-start gap-3">
+                <FiMapPin className="h-5 w-5 shrink-0 text-blue-500" />
+                <span>Kaduna, Nigeria</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FiMail className="h-5 w-5 shrink-0 text-blue-500" />
+                <a href="mailto:info@codewarriors.tech" className="transition-colors hover:text-blue-400">codewarriorstech@gmail.com </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <FiPhone className="h-5 w-5 shrink-0 text-blue-500" />
+                <a href="tel:+2340000000000" className="transition-colors hover:text-blue-400">+234 805 657 1766</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      {/* 3. BOTTOM COPYRIGHT BAR */}
+      <div className="border-t border-slate-800 bg-slate-900/50">
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="font-inter text-sm text-slate-500">
+            &copy; {currentYear} Code Warriors Tech. All rights reserved.
+          </p>
+          <div className="flex gap-6 text-sm text-slate-500">
+             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+  );
+}
