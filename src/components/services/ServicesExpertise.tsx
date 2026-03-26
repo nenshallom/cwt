@@ -123,7 +123,7 @@ export default function ServicesExpertise() {
                 <p className="font-inter text-base text-gray-600 leading-relaxed">
                   {service.description}
                 </p>
-
+                
                 <div className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100 mt-6 pt-6 border-t border-gray-100" : "grid-rows-[0fr] opacity-0"}`}>
                   <div className="overflow-hidden">
                     <p className="font-inter text-sm text-gray-700 leading-relaxed bg-blue-50/50 p-4 rounded-xl border border-blue-100/50">

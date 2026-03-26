@@ -9,18 +9,21 @@ export default function ServicesSection() {
       description: "Custom solutions from concept to final product using diverse technologies and methodologies.",
       icon: <SquareCode className="h-6 w-6" />,
       color: "bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white", 
+      href: "/services/software-engineering",
     },
     {
       title: "Consultation",
       description: "Scalable and user-friendly software delivered as a service to elevate your business.",
       icon: <FiCloud className="h-6 w-6" />,
       color: "bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white",
+      href: "/services/consultation",
     },
     {
       title: "Training and Tutoring",
       description: "User-friendly and innovative mobile apps for Android and iOS platforms.",
       icon: <FiSmartphone className="h-6 w-6" />,
       color: "bg-purple-50 text-purple-600 group-hover:bg-purple-600 group-hover:text-white",
+      href: "/services/training-and-tutoring",
     }
     // {
     //   title: "Artificial Intelligence",
@@ -63,9 +66,10 @@ export default function ServicesSection() {
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           
           {services.map((service, index) => (
-            <div 
+            <Link
+              href={service.href} 
               key={index} 
-              className="group relative rounded-2xl bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-gray-100"
+              className="group relative block rounded-2xl bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border border-gray-100"
             >
               {/* Icon Container with hover effects */}
               <div className={`mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl transition-colors duration-300 ${service.color}`}>
@@ -79,13 +83,13 @@ export default function ServicesSection() {
               <p className="font-inter text-base text-gray-600 leading-relaxed">
                 {service.description}
               </p>
-            </div>
+            </Link>
           ))}
 
         </div>
 
         {/* VIEW ALL BUTTON (Polished to match UI) */}
-        <div className="flex justify-center mt-12 w-full">
+        <div className="hidden justify-center mt-12 w-full">
           <Link href="/services">
             <button className="flex gap-3 rounded-lg bg-blue-600 px-8 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-blue-700">
                View All Services
