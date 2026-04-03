@@ -8,21 +8,21 @@ export default function ServicesSection() {
       title: "Software Development",
       description: "Custom solutions from concept to final product using diverse technologies and methodologies.",
       icon: <SquareCode className="h-6 w-6" />,
-      color: "bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white", 
+      color: "bg-[#7C3AED]/10 text-[#7C3AED] group-hover:bg-[#7C3AED] group-hover:text-white", 
       href: "/services/software-engineering",
     },
     {
       title: "Consultation",
       description: "Scalable and user-friendly software delivered as a service to elevate your business.",
       icon: <FiCloud className="h-6 w-6" />,
-      color: "bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white",
+      color: "bg-[#7C3AED]/10 text-[#7C3AED] group-hover:bg-[#7C3AED] group-hover:text-white",
       href: "/services/consultation",
     },
     {
       title: "Training and Tutoring",
       description: "User-friendly and innovative mobile apps for Android and iOS platforms.",
       icon: <FiSmartphone className="h-6 w-6" />,
-      color: "bg-purple-50 text-purple-600 group-hover:bg-purple-600 group-hover:text-white",
+      color: "bg-[#7C3AED]/10 text-[#7C3AED] group-hover:bg-[#7C3AED] group-hover:text-white",
       href: "/services/training-and-tutoring",
     }
     // {
@@ -51,7 +51,7 @@ export default function ServicesSection() {
         
         {/* TOP HEADER AREA */}
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-blue-600 py-2 px-3 bg-blue-500/20 rounded-lg">
+          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-[#7C3AED] py-2 px-3 bg-[#7C3AED]/10 rounded-lg">
             Our Services
           </h2>
           <h3 className="mt-4 font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -76,7 +76,7 @@ export default function ServicesSection() {
                 {service.icon}
               </div>
 
-              <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-blue-600">
+              <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-[#7C3AED]">
                 {service.title}
               </h4>
 

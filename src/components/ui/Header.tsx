@@ -29,7 +29,7 @@ export default function Header() {
             <img src="/navLogo2.png" alt="Code Warriors Logo" className="h-12 w-12 rounded-lg" />
           </span>
           <span className="hidden md:block font-syne lg:text-lg font-bold text-gray-900">
-            Code Warriors
+            Code Warriors Tech
           </span>
         </Link>
 
@@ -39,7 +39,7 @@ export default function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className="font-inter text-md font-medium text-gray-600 transition-colors hover:text-blue-600"
+              className="font-inter text-md font-medium text-gray-600 transition-colors hover:text-brand-purple"
             >
               {link.name}
             </Link>

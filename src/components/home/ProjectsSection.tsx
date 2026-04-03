@@ -4,29 +4,36 @@ import { FiArrowRight, FiExternalLink } from "react-icons/fi";
 export default function ProjectsSection() {
   const projects = [
     {
-      category: "Education Training",
-      title: "Summer Coding Boot Camp",
+      category: "Training",
+      title: "Summer Coding Club",
       client: "Arcade British International Academy",
       image: "/project1.png",
-      link: "https://example.com/project-1", 
+      link: "", 
     },
     {
       category: "Web Design",
-      title: "School Website",
+      title: "IBUAM UNIVERSITY PORTAL",
       client: "Educational institution",
-      image: "/project2.png",
-      link: "https://example.com/project-2",
+      image: "/ibuam.png",
+      link: "https://www.ibuam.edu.ng/",
     },
     {
-      category: "Fitness E-commerce",
-      title: "Gym & Fitness Website",
+      category: "Dating",
+      title: "Love4you Dating app ",
       client: "Jane Meldrun",
-      image: "/project3.png",
-      link: "https://example.com/project-3",
+      image: "/love4you.png",
+      link: "https://www.love4you.net/",
     },
+    // {
+    //   category: "Fitness E-commerce",
+    //   title: "Gym & Fitness Website",
+    //   client: "Jane Meldrun",
+    //   image: "/project3.png",
+    //   link: "https://example.com/project-3",
+    // },
     {
-      category: "Mobile App React Native",
-      title: "Food Ordering App",
+      category: "Mobile App",
+      title: "Ree's Kitchen Ordering App",
       client: "Ree's Kitchen",
       image: "/project4.png",
       link: "https://example.com/project-4",
@@ -39,7 +46,7 @@ export default function ProjectsSection() {
         
         {/* TOP HEADER AREA */}
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-blue-600 py-2 px-3 bg-blue-500/20 rounded-lg">
+          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-[#7C3AED] py-2 px-3 bg-[#7C3AED]/10 rounded-lg">
             Our Work
           </h2>
           <h3 className="mt-4 font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -71,7 +78,7 @@ export default function ProjectsSection() {
                   className="transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 z-10 flex items-center justify-center bg-blue-900/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <div className="flex h-12 w-12 transform items-center justify-center rounded-full bg-white text-blue-600 shadow-lg transition-transform duration-300 translate-y-4 group-hover:translate-y-0">
+                  <div className="flex h-12 w-12 transform items-center justify-center rounded-full bg-white text-[#7C3AED] shadow-lg transition-transform duration-300 translate-y-4 group-hover:translate-y-0">
                     <FiExternalLink className="h-6 w-6" />
                   </div>
                 </div>
@@ -84,7 +91,7 @@ export default function ProjectsSection() {
 
               {/* Text Content Container */}
               <div className="p-6 sm:p-8">
-                <span className="inline-block rounded-full bg-purple-400 px-3 py-1 font-inter text-xs font-semibold tracking-wide text-black mb-4">
+                <span className="inline-block rounded-full bg-[#7C3AED]/10 px-3 py-1 font-inter text-xs font-semibold tracking-wide text-[#7C3AED] mb-4">
                   {project.category}
                 </span>
 
@@ -92,7 +99,7 @@ export default function ProjectsSection() {
                   {project.title}
                 </h4>
 
-                <p className="font-inter text-sm font-medium text-gray-500">
+                <p className="hidden font-inter text-sm font-medium text-gray-500">
                   Client: <span className="text-gray-700">{project.client}</span>
                 </p>
               </div>

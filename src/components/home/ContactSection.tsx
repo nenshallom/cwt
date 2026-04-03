@@ -39,11 +39,11 @@ export default function ContactSection() {
           
           {/* LEFT COLUMN: Text & Contact Info */}
           <div>
-            <h2 className="font-syne text-sm font-bold uppercase w-fit tracking-wider text-blue-600 py-2 px-3 bg-blue-500/20 rounded-lg mb-4">
+            <h2 className="font-syne text-sm font-bold uppercase w-fit tracking-wider text-brand-purple py-2 px-3 bg-brand-purple/10 rounded-lg mb-4">
             Contact Us
             </h2>
             <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl leading-tight">
-            lets Build For <span className="text-blue-600">Your</span> Business Together
+            lets Build For <span className="text-brand-purple">Your</span> Business Together
             </h3>
             <p className="mt-6 font-inter text-lg text-gray-600 leading-relaxed max-w-lg mb-10">
             Ready to start your project? Contact us and let's discuss how we can grow your business ideas with innovative technology.
@@ -58,7 +58,7 @@ export default function ContactSection() {
                   href={info.href}
                   className="group flex items-start gap-4 p-4 rounded-xl transition-colors hover:bg-white hover:shadow-sm border border-transparent hover:border-gray-100"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-100 text-purple-500 transition-colors group-hover:bg-purple-700 group-hover:text-white">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-purple/10 text-purple-500 transition-colors group-hover:bg-brand-purple group-hover:text-white">
                     {info.icon}
                   </div>
                   <div>
@@ -69,7 +69,7 @@ export default function ContactSection() {
               ))}
             </div>
             <Link 
-            href="/"
+            href="/contact"
             className="flex gap-3 items-center font-bold text-black hover:text-purple-700 mt-4"
             >Visit full contact page
             <FiArrowRight />
@@ -91,7 +91,7 @@ export default function ContactSection() {
                   type="text"
                   id="name"
                   placeholder="Your full name"
-                  className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-inter text-gray-900 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-inter text-gray-900 focus:border-brand-purple focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-purple/20 transition-all"
                 />
               </div>
 
@@ -104,7 +104,7 @@ export default function ContactSection() {
                   type="email"
                   id="email"
                   placeholder="your@email.com"
-                  className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-inter text-gray-900 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
+                  className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-inter text-gray-900 focus:border-brand-purple focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-purple/10 transition-all"
                 />
               </div>
 
@@ -120,12 +120,12 @@ export default function ContactSection() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Tell us about your project..."
-                  className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-inter text-gray-900 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all resize-none"
+                  className="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 font-inter text-gray-900 focus:border-brand-purple focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-purple/10 transition-all resize-none"
                 ></textarea>
                 
                 {/* Character Counter */}
                 <div className="mt-2 flex justify-end">
-                  <span className={`text-xs font-inter font-medium ${message.length >= maxChars ? 'text-red-500' : 'text-gray-400'}`}>
+                  <span className={`text-xs font-inter font-medium ${message.length >= maxChars ? 'text-brand-magenta' : 'text-gray-400'}`}>
                     {message.length}/{maxChars}
                   </span>
                 </div>
@@ -134,7 +134,7 @@ export default function ContactSection() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="group flex w-full items-center justify-center gap-2 rounded-lg bg-purple-700 px-8 py-4 text-base font-semibold text-white shadow-md transition-all hover:bg-purple-500"
+                className="group flex w-full items-center justify-center gap-2 rounded-lg bg-brand-purple px-8 py-4 text-base font-semibold text-white shadow-md transition-all hover:bg-brand-purple/80"
               >
                 Send Message
                 <FiSend className="h-5 w-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />

@@ -32,11 +32,11 @@ export default function Footer() {
               type="email"
               required
               placeholder="Enter your email"
-              className="w-full rounded-md border border-slate-700 bg-slate-800 px-4 py-3 text-white placeholder-slate-400 focus:border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500/50 sm:max-w-xs"
+              className="w-full rounded-md border border-slate-700 bg-slate-800 px-4 py-3 text-white placeholder-slate-400 focus:border-brand-purple focus:outline-none focus:ring-2 focus:ring-brand-purple/50 sm:max-w-xs"
             />
             <button
               type="submit"
-              className="mt-3 w-full rounded-md bg-purple-700 px-6 py-3 font-inter text-sm font-semibold text-white transition-colors hover:bg-purple-500 sm:ml-3 sm:mt-0 sm:w-auto shrink-0"
+              className="mt-3 w-full rounded-md bg-brand-purple px-6 py-3 font-inter text-sm font-semibold text-white transition-colors hover:bg-brand-purple/80 sm:ml-3 sm:mt-0 sm:w-auto shrink-0"
             >
               Subscribe
             </button>
@@ -52,30 +52,30 @@ export default function Footer() {
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2">
               <span>
-                <img src="/navLogo.jpeg" alt="Code Warriors Logo" className="h-12 w-12 rounded-lg" />
+                <img src="/navLogo2.png" alt="Code Warriors Logo" className="h-12 w-12 rounded-lg" />
               </span>
-              <span className="font-syne text-xl font-bold text-white">Code Warriors</span>
+              <span className="font-syne text-xl font-bold text-white">Code Warriors Tech</span>
             </Link>
             <p className="font-inter text-sm text-slate-400 leading-relaxed max-w-xs">
               Building innovative software solutions that empower businesses to thrive in the digital age.
             </p>
             <div className="flex gap-4 flex-wrap">
-              <a href="https://www.facebook.com/codewariors02" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-purple-700 hover:text-white">
+              <a href="https://www.facebook.com/codewariors02" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
                 <FiFacebook className="h-4 w-4" />
               </a>
-              <a href="https://x.com/codewarriors02?t=YsAvpmq0Uix4pQETxEKMTw&s=09 " className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-purple-700 hover:text-white">
+              <a href="https://x.com/codewarriors02?t=YsAvpmq0Uix4pQETxEKMTw&s=09 " className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
                 <FaXTwitter className="h-4 w-4" /> {/* Represents X */}
               </a>
-              <a href="https://www.instagram.com/code_warriors_team_ " className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-purple-700 hover:text-white">
+              <a href="https://www.instagram.com/code_warriors_team_ " className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
                 <FiInstagram className="h-4 w-4" />
               </a>
-              <a href="https://www.linkedin.com/company/code-warriors-tech/" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-purple-700 hover:text-white">
+              <a href="https://www.linkedin.com/company/code-warriors-tech/" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
                 <FiLinkedin className="h-4 w-4" />
               </a>
-              <a href="https://www.tiktok.com/@code_warriors_team" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-purple-700 hover:text-white">
+              <a href="https://www.tiktok.com/@code_warriors_team" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
                 <FaTiktok className="h-4 w-4" />
               </a>
-              <a href=" https://youtube.com/@codewarriorstech" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-purple-700 hover:text-white">
+              <a href=" https://youtube.com/@codewarriorstech" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
                 <FaYoutube className="h-4 w-4" />
               </a>
             </div>
@@ -85,12 +85,12 @@ export default function Footer() {
           <div>
             <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Quick Links</h4>
             <ul className="space-y-4 font-inter text-sm text-slate-400">
-              <li><Link href="/" className="transition-colors hover:text-purple-700">Home</Link></li>
-              <li><Link href="/about" className="transition-colors hover:text-purple-700">About</Link></li>
-              <li><Link href="/services" className="transition-colors hover:text-purple-700">Services</Link></li>
-              <li><Link href="/portfolio" className="transition-colors hover:text-purple-700">Portfolio</Link></li>
-              <li><Link href="/careers" className="transition-colors hover:text-purple-700">Careers</Link></li>
-              <li><Link href="/contact" className="transition-colors hover:text-purple-700">Contact</Link></li>
+              <li><Link href="/" className="transition-colors hover:text-brand-purple">Home</Link></li>
+              <li><Link href="/about" className="transition-colors hover:text-brand-purple">About</Link></li>
+              <li><Link href="/services" className="transition-colors hover:text-brand-purple">Services</Link></li>
+              <li><Link href="/portfolio" className="transition-colors hover:text-brand-purple">Portfolio</Link></li>
+              <li><Link href="/careers" className="transition-colors hover:text-brand-purple">Careers</Link></li>
+              <li><Link href="/contact" className="transition-colors hover:text-brand-purple">Contact</Link></li>
             </ul>
           </div>
 
@@ -98,9 +98,9 @@ export default function Footer() {
           <div>
             <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Services</h4>
             <ul className="space-y-4 font-inter text-sm text-slate-400">
-              <li><Link href="/services/software-engineering" className="transition-colors hover:text-purple-700">Software Development</Link></li>
-              <li><Link href="/services/consultation" className="transition-colors hover:text-purple-700">Consultation</Link></li>
-              <li><Link href="/services/training-and-tutoring" className="transition-colors hover:text-purple-700">Training and Tutoring</Link></li>
+              <li><Link href="/services/software-engineering" className="transition-colors hover:text-brand-purple">Software Development</Link></li>
+              <li><Link href="/services/consultation" className="transition-colors hover:text-brand-purple">Consultation</Link></li>
+              <li><Link href="/services/training-and-tutoring" className="transition-colors hover:text-brand-purple">Training and Tutoring</Link></li>
              
             </ul>
           </div>

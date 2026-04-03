@@ -5,7 +5,7 @@ import { FiArrowRight, FiCode } from "react-icons/fi";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white pt-16 pb-20 lg:pt-20 lg:pb-28 mx-auto">
-     <div className="absolute top-80 left-[100px] w-72 h-72 bg-green-500/20 border rounded-full blur-3xl pointer-events-none"></div>
+     <div className="absolute top-80 left-[100px] w-72 h-72 bg-[#7C3AED]/20 border rounded-full blur-3xl pointer-events-none"></div>
       {/* Max width wrapper to keep content centered and constrained */}
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6">
       
@@ -13,14 +13,14 @@ export default function Hero() {
           
           {/* LEFT COLUMN: Text and Buttons */}
           <div className="max-w-2xl">
-            <div className="inline-flex items-center rounded-full bg-blue-50 px-4 py-3 text-md font-semibold text-blue-600 mb-6 font-inter">
+            <div className="inline-flex items-center rounded-full bg-[#7C3AED]/10 px-4 py-3 text-md font-semibold text-[#7C3AED] mb-6 font-inter">
               Welcome to Code Warriors Tech
             </div>
 
             {/* Main Headline */}
             <h1 className="font-syne text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
             Building Secure & Innovative <br className="hidden sm:block" />
-              <span className="text-blue-600">Software Solutions</span>
+              <span className="text-[#7C3AED]">Software Solutions</span>
             </h1>
 
             {/* Subheadline description */}
@@ -84,25 +84,35 @@ export default function Hero() {
           {/* RIGHT COLUMN: Image and Statistics */}
           <div className="relative mx-auto w-[90%] sm:w-[90%] lg:w-full max-w-lg lg:max-w-none">
             <div className="relative w-full rounded-2xl bg-gray-100 pb-[75%] shadow-lg overflow-hidden border border-gray-200">
-               <Image src={"/hero.jpg"} alt="Hero Image" layout="fill" objectFit="cover" className="rounded-2xl" />
+               <Image src={"/abthero.jpeg"} alt="Hero Image" layout="fill" objectFit="cover" className="rounded-2xl" />
             </div>
 
             {/* Floating Stats Card */}
             <div className="absolute -bottom-6 -left-6 rounded-xl bg-white p-6 shadow-xl border border-gray-100 sm:-bottom-8 sm:-left-8">
               <div className="flex items-center gap-4">
-                <div className="hidden flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                <div className="hidden flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-[#7C3AED]">
                   <FiCode className="h-6 w-6" />
                 </div>
                 <div className="flex gap-6 sm:gap-8">
                 <div>
-                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-blue-600">24/7</p>
+                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">24/7</p>
                   <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Support</p>
                 </div>
 
                 <div className="w-px bg-gray-200"></div>
                 <div>
-                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-blue-600">100%</p>
+                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">100%</p>
                   <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Remote</p>
+                </div>
+                <div className="w-px bg-gray-200"></div>
+                <div>
+                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">15+</p>
+                  <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Team & Interns</p>
+                </div>
+                <div className="w-px bg-gray-200"></div>
+                <div>
+                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">4+ Years</p>
+                  <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Experience</p>
                 </div>
               </div>
               </div>

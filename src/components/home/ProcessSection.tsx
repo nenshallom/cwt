@@ -36,7 +36,7 @@ export default function ProcessSection() {
         
         {/* TOP HEADER AREA */}
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-blue-600 py-2 px-3 bg-blue-500/20 rounded-lg">
+          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-[#7C3AED] py-2 px-3 bg-[#7C3AED]/10 rounded-lg">
             How We Work
           </h2>
           <h3 className="mt-4 font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -61,16 +61,16 @@ export default function ProcessSection() {
                 className="group relative rounded-2xl bg-white p-8 shadow-sm border border-gray-100 z-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 {/* The Floating Number Badge */}
-                <div className="absolute -top-4 -right-4 flex h-8 w-8 items-center justify-center rounded-full bg-blue-500 text-sm font-bold text-white shadow-md ring-4 ring-white transition-transform duration-300 group-hover:scale-110">
+                <div className="absolute -top-4 -right-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#7C3AED]/10 text-sm font-bold text-[#7C3AED] shadow-md ring-4 ring-white transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#7C3AED] group-hover:text-white">
                   {step.num}
                 </div>
 
-                <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50 text-blue-600 transition-colors duration-300 group-hover:bg-blue-600 group-hover:text-white">
+                <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#7C3AED]/10 text-[#7C3AED] transition-colors duration-300 group-hover:bg-[#7C3AED] group-hover:text-white">
                   {step.icon}
                 </div>
 
                 {/* Step Title with hover effect */}
-                <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-blue-600">
+                <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#7C3AED]">
                   {step.title}
                 </h4>
 
