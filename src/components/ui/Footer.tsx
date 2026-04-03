@@ -16,14 +16,14 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 text-slate-300">
+    <footer className="bg-[#a6a6a6] text-slate-300">
       
       {/* 1. NEWSLETTER SECTION */}
-      <div className="border-b border-slate-800">
+      <div className="">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:px-8">
           <div>
             <h3 className="font-syne text-2xl font-bold text-white">Stay Updated</h3>
-            <p className="mt-2 font-inter text-sm text-slate-400">
+            <p className="mt-2 font-inter text-sm text-white">
               Get the latest news and insights delivered to your inbox.
             </p>
           </div>
@@ -32,7 +32,7 @@ export default function Footer() {
               type="email"
               required
               placeholder="Enter your email"
-              className="w-full rounded-md border border-slate-700 bg-slate-800 px-4 py-3 text-white placeholder-slate-400 focus:border-brand-purple focus:outline-none focus:ring-2 focus:ring-brand-purple/50 sm:max-w-xs"
+              className="w-full rounded-md  bg-white px-4 py-3 text-white placeholder-slate-400 focus:border-brand-purple focus:outline-none focus:ring-2 focus:ring-brand-purple/50 sm:max-w-xs"
             />
             <button
               type="submit"
@@ -56,26 +56,26 @@ export default function Footer() {
               </span>
               <span className="font-syne text-xl font-bold text-white">Code Warriors Tech</span>
             </Link>
-            <p className="font-inter text-sm text-slate-400 leading-relaxed max-w-xs">
+            <p className="font-inter text-sm text-white leading-relaxed max-w-xs">
               Building innovative software solutions that empower businesses to thrive in the digital age.
             </p>
             <div className="flex gap-4 flex-wrap">
-              <a href="https://www.facebook.com/codewariors02" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
+              <a href="https://www.facebook.com/codewariors02" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
                 <FiFacebook className="h-4 w-4" />
               </a>
-              <a href="https://x.com/codewarriors02?t=YsAvpmq0Uix4pQETxEKMTw&s=09 " className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
+              <a href="https://x.com/codewarriors02?t=YsAvpmq0Uix4pQETxEKMTw&s=09 " className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
                 <FaXTwitter className="h-4 w-4" /> {/* Represents X */}
               </a>
-              <a href="https://www.instagram.com/code_warriors_team_ " className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
+              <a href="https://www.instagram.com/code_warriors_team_ " className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
                 <FiInstagram className="h-4 w-4" />
               </a>
-              <a href="https://www.linkedin.com/company/code-warriors-tech/" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
+              <a href="https://www.linkedin.com/company/code-warriors-tech/" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
                 <FiLinkedin className="h-4 w-4" />
               </a>
-              <a href="https://www.tiktok.com/@code_warriors_team" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
+              <a href="https://www.tiktok.com/@code_warriors_team" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
                 <FaTiktok className="h-4 w-4" />
               </a>
-              <a href=" https://youtube.com/@codewarriorstech" className="rounded-md bg-slate-800 p-2.5 text-slate-400 transition-colors hover:bg-brand-purple hover:text-white">
+              <a href=" https://youtube.com/@codewarriorstech" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
                 <FaYoutube className="h-4 w-4" />
               </a>
             </div>
@@ -84,7 +84,7 @@ export default function Footer() {
           {/* Column 2: Quick Links */}
           <div>
             <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Quick Links</h4>
-            <ul className="space-y-4 font-inter text-sm text-slate-400">
+            <ul className="space-y-4 font-inter text-sm text-white">
               <li><Link href="/" className="transition-colors hover:text-brand-purple">Home</Link></li>
               <li><Link href="/about" className="transition-colors hover:text-brand-purple">About</Link></li>
               <li><Link href="/services" className="transition-colors hover:text-brand-purple">Services</Link></li>
@@ -97,7 +97,7 @@ export default function Footer() {
           {/* Column 3: Services */}
           <div>
             <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Services</h4>
-            <ul className="space-y-4 font-inter text-sm text-slate-400">
+            <ul className="space-y-4 font-inter text-sm text-white">
               <li><Link href="/services/software-engineering" className="transition-colors hover:text-brand-purple">Software Development</Link></li>
               <li><Link href="/services/consultation" className="transition-colors hover:text-brand-purple">Consultation</Link></li>
               <li><Link href="/services/training-and-tutoring" className="transition-colors hover:text-brand-purple">Training and Tutoring</Link></li>
@@ -108,17 +108,17 @@ export default function Footer() {
           {/* Column 4: Contact Us */}
           <div>
             <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Contact Us</h4>
-            <ul className="space-y-4 font-inter text-sm text-slate-400">
+            <ul className="space-y-4 font-inter text-sm text-white">
               <li className="flex items-start gap-3">
-                <FiMapPin className="h-5 w-5 shrink-0 text-white-700" />
+                <FiMapPin className="h-5 w-5 shrink-0 text-brand-purple" />
                 <span>Kaduna, Nigeria</span>
               </li>
               <li className="flex items-center gap-3">
-                <FiMail className="h-5 w-5 shrink-0 text-white-700" />
+                <FiMail className="h-5 w-5 shrink-0 text-brand-purple" />
                 <a href="mailto:info@codewarriors.tech" className="transition-colors hover:text-purple-400">codewarriorstech@gmail.com </a>
               </li>
               <li className="flex items-center gap-3">
-                <FiPhone className="h-5 w-5 shrink-0 text-white-700" />
+                <FiPhone className="h-5 w-5 shrink-0 text-brand-purple" />
                 <a href="tel:+2340000000000" className="transition-colors hover:text-purple-400">+234 805 657 1766</a>
               </li>
             </ul>
@@ -128,12 +128,12 @@ export default function Footer() {
       </div>
 
       {/* 3. BOTTOM COPYRIGHT BAR */}
-      <div className="border-t border-slate-800 bg-slate-900/50">
+      <div className="">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="font-inter text-sm text-slate-500">
+          <p className="font-inter text-sm text-white">
             &copy; {currentYear} Code Warriors Tech. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-slate-500">
+          <div className="flex gap-6 text-sm text-white">
              <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
              <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>

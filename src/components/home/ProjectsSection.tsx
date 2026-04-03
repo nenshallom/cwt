@@ -18,7 +18,7 @@ export default function ProjectsSection() {
       link: "https://www.ibuam.edu.ng/",
     },
     {
-      category: "Dating",
+      category: "Web Design",
       title: "Love4you Dating app ",
       client: "Jane Meldrun",
       image: "/love4you.png",

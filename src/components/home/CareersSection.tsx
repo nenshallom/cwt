@@ -117,9 +117,9 @@ export default function CareersSection() {
           {/* RIGHT COLUMN: Job Postings */}
           <div className="flex flex-col gap-4">
             {jobs.map((job, index) => (
-              <Link 
+              <a 
                 key={index}
-                href="/"
+                href={`mailto:codewarriorstech@gmail.com?subject=Application for ${job.title} Role`}
                 className="group flex flex-col sm:flex-row sm:items-center justify-between rounded-2xl bg-white p-6 transition-all duration-300 hover:border-blue-200 hover:shadow-md hover:ring-1 hover:ring-blue-100 gap-4"
               >
                 <div>
@@ -155,7 +155,7 @@ export default function CareersSection() {
 
 
 
-              </Link>
+              </a>
             ))}
 
             {/* View All Positions Link */}
