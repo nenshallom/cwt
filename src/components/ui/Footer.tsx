@@ -27,20 +27,8 @@ export default function Footer() {
               Get the latest news and insights delivered to your inbox.
             </p>
           </div>
-          <form className="mt-6 sm:flex lg:mt-0 lg:w-full lg:max-w-md" onSubmit={(e) => e.preventDefault()}>
-            <input
-              type="email"
-              required
-              placeholder="Enter your email"
-              className="w-full rounded-md  bg-white px-4 py-3 text-white placeholder-slate-400 focus:border-brand-purple focus:outline-none focus:ring-2 focus:ring-brand-purple/50 sm:max-w-xs"
-            />
-            <button
-              type="submit"
-              className="mt-3 w-full rounded-md bg-brand-purple px-6 py-3 font-inter text-sm font-semibold text-white transition-colors hover:bg-brand-purple/80 sm:ml-3 sm:mt-0 sm:w-auto shrink-0"
-            >
-              Subscribe
-            </button>
-          </form>
+
+        
         </div>
       </div>
 
