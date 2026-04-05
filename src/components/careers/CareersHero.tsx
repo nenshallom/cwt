@@ -19,14 +19,14 @@ export default function CareersHero() {
           <div className="max-w-2xl">
             {/* Breadcrumb */}
             <nav className="mb-10 flex items-center gap-2 text-sm font-medium text-gray-500">
-              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <Link href="/" className="hover:text-brand-purple transition-colors">Home</Link>
               <FiChevronRight className="h-4 w-4" />
               <span className="text-black">Careers</span>
             </nav>
 
             <h1 className="font-syne text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl leading-tight">
               Join Our Team of <br className="hidden sm:block" />
-              <span className="text-blue-600">Innovators & Builders</span>
+              <span className="text-brand-purple">Innovators & Builders</span>
             </h1>
             
             <p className="mt-6 font-inter text-lg text-gray-600 leading-relaxed">
@@ -37,8 +37,8 @@ export default function CareersHero() {
             <div className="mt-8 grid grid-cols-3 gap-4 border-y border-gray-200 py-6 sm:py-8">
               {stats.map((stat, index) => (
                 <div key={index}>
-                  <p className="font-syne text-2xl sm:text-3xl font-extrabold text-blue-600">{stat.value}</p>
-                  <p className="font-inter text-xs sm:text-sm font-medium text-gray-500 mt-1">{stat.label}</p>
+                  <p className="font-syne text-2xl sm:text-3xl font-extrabold text-brand-purple">{stat.value}</p>
+                  <p className="font-inter uppercase text-xs sm:text-sm font-medium text-gray-500 mt-1">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -71,7 +71,7 @@ export default function CareersHero() {
 
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -left-6 sm:-bottom-8 sm:-left-8 z-20 flex items-center gap-4 rounded-2xl bg-white p-4 sm:p-5 shadow-xl border border-gray-50">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-50 text-green-600">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-purple/10 text-brand-purple">
                 <FiBriefcase className="h-6 w-6" />
               </div>
               <div>

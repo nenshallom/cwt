@@ -111,8 +111,8 @@ export default function Hero() {
                 </div>
                 <div className="w-px bg-gray-200"></div>
                 <div>
-                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">4+ Years</p>
-                  <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Experience</p>
+                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">4+</p>
+                  <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Years Experience</p>
                 </div>
               </div>
               </div>

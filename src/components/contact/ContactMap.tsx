@@ -5,7 +5,7 @@ export default function ContactMap() {
         
         {/* HEADER AREA */}
         <div className="mx-auto max-w-3xl text-center mb-10">
-          <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-[#0ea5e9] mb-4">
+          <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-brand-purple bg-brand-purple/10 w-fit mb-4 mx-auto py-2 px-3 rounded-lg">
             Our Location
           </h2>
           <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

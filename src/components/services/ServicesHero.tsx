@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FiArrowRight, FiCheckCircle, FiLayers } from "react-icons/fi";
+import { FiChevronRight, FiArrowRight, FiCheckCircle, FiLayers } from "react-icons/fi";
 
 export default function ServicesHero() {
   const stats = [
@@ -17,6 +17,12 @@ export default function ServicesHero() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl -z-10 pointer-events-none translate-x-1/2 -translate-y-1/2"></div>
 
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Breadcrumb Navigation */}
+        <nav className="mb-6 flex items-center gap-2 text-sm font-medium text-gray-500">
+            <Link href="/" className="hover:text-brand-purple transition-colors">Home</Link>
+            <FiChevronRight className="h-4 w-4" />
+            <span className="text-black">Services</span>
+          </nav>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
           
           {/* LEFT COLUMN: Text, Stats, and Buttons */}

@@ -13,37 +13,37 @@ export default function CareersPerks() {
       title: "Competitive Salary",
       description: "We offer market-competitive compensation packages with regular reviews and performance bonuses.",
       icon: <FiDollarSign className="h-6 w-6" />,
-      color: "text-emerald-600 bg-emerald-50 group-hover:bg-emerald-600 group-hover:text-white",
+      color: "text-brand-purple bg-brand-purple/10 group-hover:bg-brand-purple group-hover:text-white",
     },
     {
       title: "Remote Flexibility",
       description: "Work from anywhere. We support fully remote, hybrid, or in-office arrangements based on your preference.",
       icon: <FiMapPin className="h-6 w-6" />,
-      color: "text-blue-600 bg-blue-50 group-hover:bg-blue-600 group-hover:text-white",
+      color: "text-brand-purple bg-brand-purple/10 group-hover:bg-brand-purple group-hover:text-white",
     },
     {
       title: "Health & Wellness",
       description: "Comprehensive health insurance coverage for you and your family, plus wellness programs.",
       icon: <FiHeart className="h-6 w-6" />,
-      color: "text-rose-600 bg-rose-50 group-hover:bg-rose-600 group-hover:text-white",
+      color: "text-brand-purple bg-brand-purple/10 group-hover:bg-brand-purple group-hover:text-white",
     },
     {
       title: "Learning & Growth",
       description: "Annual learning budget, conference attendance, certifications, and mentorship programs.",
       icon: <FiBookOpen className="h-6 w-6" />,
-      color: "text-purple-600 bg-purple-50 group-hover:bg-purple-600 group-hover:text-white",
+      color: "text-brand-purple bg-brand-purple/10 group-hover:bg-brand-purple group-hover:text-white",
     },
     {
       title: "Flexible PTO",
       description: "Generous paid time off policy with flexible scheduling to maintain work-life balance.",
       icon: <FiCalendar className="h-6 w-6" />,
-      color: "text-indigo-600 bg-indigo-50 group-hover:bg-indigo-600 group-hover:text-white",
+      color: "text-brand-purple bg-brand-purple/10 group-hover:bg-brand-purple group-hover:text-white",
     },
     {
       title: "Great Culture",
       description: "Collaborative environment with team events, hackathons, and a supportive community.",
       icon: <FiSmile className="h-6 w-6" />,
-      color: "text-amber-600 bg-amber-50 group-hover:bg-amber-600 group-hover:text-white",
+      color: "text-brand-purple bg-brand-purple/10 group-hover:bg-brand-purple group-hover:text-white",
     }
   ];
 
@@ -53,7 +53,7 @@ export default function CareersPerks() {
         
         {/* HEADER AREA */}
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-blue-600 py-2 px-3 bg-blue-500/20 rounded-lg mb-4">
+          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-brand-purple py-2 px-3 bg-brand-purple/10 rounded-lg mb-4">
             Why Join Us
           </h2>
           <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
@@ -77,7 +77,7 @@ export default function CareersPerks() {
               </div>
 
               {/* Title */}
-              <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-blue-600">
+              <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-brand-purple">
                 {perk.title}
               </h4>
 

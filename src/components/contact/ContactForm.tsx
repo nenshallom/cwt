@@ -23,16 +23,16 @@ export default function ContactForm() {
         <div className=" max-w-[95rem]  mb-16">
           {/* Breadcrumbs */}
           <nav className="mb-10 flex items-center gap-2 text-sm font-medium text-gray-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-brand-purple transition-colors">Home</Link>
             <FiChevronRight className="h-4 w-4" />
             <span className="text-black">Contact</span>
           </nav>
 
-          <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-[#0ea5e9] mb-4">
+          <h2 className="font-syne text-sm font-bold uppercase tracking-wider py-2 px-3 rounded-lg text-brand-purple bg-brand-purple/10 mb-4 w-fit">
             GET IN TOUCH
           </h2>
           <h1 className="font-syne text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
-            Let's Start a <span className="text-[#0ea5e9]">Conversation</span>
+            Let's Start a <span className="text-brand-purple">Conversation</span>
           </h1>
           <p className="font-inter text-lg text-gray-600 leading-relaxed max-w-2xl">
             Have a project in mind or want to learn more about our services? We'd love to hear from you. Reach out and let's build something amazing together.
@@ -59,7 +59,7 @@ export default function ContactForm() {
 
             {/* Call Card */}
             <div className="flex items-start gap-4 rounded-2xl bg-white p-6 shadow-sm border border-gray-100">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-50 text-purple-700">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-purple/10 text-brand-purple">
                 <FiPhoneCall className="h-6 w-6" />
               </div>
               <div>
@@ -76,7 +76,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <h4 className="font-syne text-lg font-bold text-gray-900">Visit Us</h4>
-                <p className="mt-1 font-inter text-sm font-medium text-gray-900">Lagos, Nigeria</p>
+                <p className="mt-1 font-inter text-sm font-medium text-gray-900">Kaduna, Nigeria</p>
                 <p className="mt-1 font-inter text-xs text-gray-500">Our headquarters</p>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function ContactForm() {
               <h4 className="font-syne text-lg font-bold text-gray-900 mb-4">Follow Us</h4>
               <div className="flex gap-4">
                 {[FiFacebook, FiTwitter, FiInstagram, FaTiktok, FaYoutube, FiLinkedin].map((Icon, index) => (
-                  <a key={index} href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white border border-gray-200 text-gray-600 transition-all hover:bg-purple-700 hover:text-white shadow-sm">
+                  <a key={index} href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white border border-gray-200 text-brand-purple transition-all hover:bg-brand-purple hover:text-white shadow-sm">
                     <Icon className="h-4 w-4" />
                   </a>
                 ))}

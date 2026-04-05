@@ -26,10 +26,10 @@ export default function CareersPositions() {
   // The Job Data
   const jobs = [
     {
-      title: "Senior Frontend Developer",
+      title: "Frontend Developer",
       department: "Engineering",
       type: "Full-time",
-      location: "Remote / Lagos",
+      location: "Remote",
       experience: "4+ years",
       salary: "₦800K - ₦1.2M/month",
       posted: "2 days ago",
@@ -46,7 +46,7 @@ export default function CareersPositions() {
       title: "Backend Engineer",
       department: "Engineering",
       type: "Full-time",
-      location: "Remote / Lagos",
+      location: "Remote",
       experience: "3+ years",
       salary: "₦700K - ₦1M/month",
       posted: "5 days ago",
@@ -64,7 +64,7 @@ export default function CareersPositions() {
       title: "UI/UX Designer",
       department: "Design",
       type: "Full-time",
-      location: "Remote / Lagos",
+      location: "Remote",
       experience: "3+ years",
       salary: "₦600K - ₦900K/month",
       posted: "1 week ago",
@@ -98,7 +98,7 @@ export default function CareersPositions() {
       title: "Mobile Developer (React Native)",
       department: "Engineering",
       type: "Full-time",
-      location: "Remote / Lagos",
+      location: "Remote",
       experience: "2+ years",
       salary: "₦600K - ₦900K/month",
       posted: "3 days ago",
@@ -115,7 +115,7 @@ export default function CareersPositions() {
       title: "Technical Project Manager",
       department: "Operations",
       type: "Full-time",
-      location: "Lagos / Hybrid",
+      location: "Remote",
       experience: "4+ years",
       salary: "₦700K - ₦1M/month",
       posted: "1 week ago",
@@ -149,7 +149,7 @@ export default function CareersPositions() {
         
         {/* HEADER AREA */}
         <div className="text-center mb-12">
-          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-blue-600 py-2 px-3 bg-blue-500/20 rounded-lg mb-4">
+          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-brand-purple py-2 px-3 bg-brand-purple/10 rounded-lg mb-4">
             Open Positions
           </h2>
           <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
@@ -202,26 +202,26 @@ export default function CareersPositions() {
                       <h4 className={`font-syne text-2xl font-bold transition-colors ${isOpen ? "text-purple-700" : "text-gray-900 group-hover:text-purple-700"}`}>
                         {job.title}
                       </h4>
-                      <span className="shrink-0 rounded-full bg-purple-100 px-3 py-1 font-inter text-xs font-semibold tracking-wide text-purple-700">
+                      <span className="shrink-0 rounded-full bg-brand-purple/10 px-3 py-1 font-inter text-xs font-semibold tracking-wide text-brand-purple">
                         {job.type}
                       </span>
                     </div>
                     
                     <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3 font-inter text-sm font-medium text-gray-500">
                       <div className="flex items-center gap-2">
-                        <FiBriefcase className="h-4 w-4 text-purple-400" />
+                        <FiBriefcase className="h-4 w-4 text-brand-purple/80" />
                         {job.department}
                       </div>
                       <div className="flex items-center gap-2">
-                        <FiMapPin className="h-4 w-4 text-purple-400" />
+                        <FiMapPin className="h-4 w-4 text-brand-purple/80" />
                         {job.location}
                       </div>
                       <div className="flex items-center gap-2">
-                        <FiClock className="h-4 w-4 text-purple-400" />
+                        <FiClock className="h-4 w-4 text-brand-purple/80" />
                         {job.experience}
                       </div>
                       <div className="flex items-center gap-2">
-                        <FiDollarSign className="h-4 w-4 text-purple-400" />
+                        <FiDollarSign className="h-4 w-4 text-brand-purple/80" />
                         {job.salary}
                       </div>
                     </div>
@@ -266,7 +266,7 @@ export default function CareersPositions() {
                         href="mailto:codewarriorstech@gmail.com"
         
                         onClick={(e) => e.stopPropagation()}
-                        className="group inline-flex items-center gap-2 font-inter text-base font-bold px-4 py-3 bg-blue-600 text-white hover:text-blue-700 transition-colors rounded-xl"
+                        className="group inline-flex items-center gap-2 font-inter text-base font-bold px-4 py-3 bg-brand-purple text-white hover:bg-brand-purple/80 transition-colors rounded-xl"
                       >
                         Apply Now
                         <FiArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />

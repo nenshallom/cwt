@@ -23,7 +23,7 @@ export default function AboutSection() {
             
             {/* Section Label */}
             <div className="flex">
-              <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-[#7C3AED] mb-4 py-2 px-3 bg-[#7C3AED]/10 rounded-lg">
+              <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-brand-purple mb-4 py-2 px-3 bg-brand-purple/10 rounded-lg">
                 About Us
               </h2>
             </div>
@@ -32,7 +32,7 @@ export default function AboutSection() {
             {/* Main Headline */}
             <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl leading-tight">
               Delivering Tailored Solutions for 
-              <span className="text-[#7C3AED]"> Unique Business Needs</span>
+              <span className="text-brand-purple"> Unique Business Needs</span>
             </h3>
 
             <p className="mt-6 font-inter text-lg text-gray-600 leading-relaxed">
@@ -44,7 +44,7 @@ export default function AboutSection() {
               {features.map((feature, index) => (
                 <li key={index} className="flex items-start">
                   <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-50 mt-0.5">
-                    <FiCheckCircle className="h-4 w-4 text-purple-400" />
+                    <FiCheckCircle className="h-4 w-4 text-brand-purple" />
                   </div>
                   <span className="ml-3 font-inter text-base text-gray-700">{feature}</span>
                 </li>

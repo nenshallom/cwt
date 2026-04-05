@@ -4,7 +4,7 @@ import { FiChevronRight } from "react-icons/fi";
 export default function PortfolioHero() {
   const stats = [
     { value: "50+", label: "Projects Completed" },
-    { value: "40+", label: "Happy Clients" },
+    { value: "30+", label: "Happy Clients" },
     { value: "4+", label: "Years Experience" },
     { value: "99%", label: "Client Satisfaction" },
   ];
@@ -23,7 +23,7 @@ export default function PortfolioHero() {
 
           {/* Main Headers */}
           <h1 className="font-syne text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-            Our <span className="text-blue-500">Portfolio</span>
+            Our <span className="text-brand-purple">Portfolio</span>
           </h1>
           <p className="mt-6 font-inter text-lg text-gray-600 leading-relaxed">
             Explore our collection of successful projects. Each project represents our commitment to delivering exceptional digital solutions that drive real business results.
@@ -34,7 +34,7 @@ export default function PortfolioHero() {
         <div className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4 border-t border-gray-200 pt-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <p className="font-syne text-4xl font-extrabold text-blue-600">
+              <p className="font-syne text-4xl font-extrabold text-brand-purple">
                 {stat.value}
               </p>
               <p className="mt-2 font-inter text-sm font-medium text-gray-600 uppercase tracking-wide">

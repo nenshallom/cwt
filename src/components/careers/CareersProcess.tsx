@@ -48,7 +48,7 @@ export default function CareersProcess() {
         
         {/* HEADER AREA */}
         <div className="mx-auto max-w-3xl text-center mb-16 lg:mb-24">
-          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-blue-600 py-2 px-3 bg-blue-500/20 rounded-lg mb-4">
+          <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-brand-purple py-2 px-3 bg-brand-purple/10 rounded-lg mb-4">
             Our Process
           </h2>
           <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
@@ -64,7 +64,7 @@ export default function CareersProcess() {
           
           {/* THE CONNECTING LINE */}
           {/* Mobile: Vertical line. Desktop: Horizontal dashed line through the middle */}
-          <div className="md:absolute w-0.5 border-l-2 border border-blue-600 lg:left-0 lg:right-0 lg:top-40 lg:h-0.5 lg:w-full lg:border-l-0 lg:border-t-2 lg:-translate-y-1/2"></div>
+          <div className="md:absolute w-0.5 border-l-2 border border-brand-purple lg:left-0 lg:right-0 lg:top-40 lg:h-0.5 lg:w-full lg:border-l-0 lg:border-t-2 lg:-translate-y-1/2"></div>
 
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-5 lg:gap-8 relative z-10">
             {steps.map((step, index) => (
@@ -73,19 +73,19 @@ export default function CareersProcess() {
                 className="group relative flex flex-col lg:items-center lg:text-center"
               >
                 {/* Mobile Layout Wrapper to keep icon and text side-by-side on small screens */}
-                <div className="flex lg:flex-col lg:items-center gap-6 lg:gap-0 w-full h-[21rem] py-5 px-3 border bg-white shadow-sm transition-transform duration-500 group-hover:scale-110 group-hover:border-blue-600 rounded-md">
+                <div className="flex lg:flex-col lg:items-center gap-6 lg:gap-0 w-full h-[21rem] py-5 px-3 border bg-white shadow-sm transition-transform duration-500 group-hover:scale-110 group-hover:border-brand-purple rounded-md">
                   
                   {/* ICON CONTAINER */}
-                  <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border-4 border-white bg-blue-50 text-blue-600 shadow-sm transition-transform duration-300  group-hover:bg-blue-600 group-hover:text-white lg:mb-8">
+                  <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border-4 border-white bg-brand-purple/10 text-brand-purple shadow-sm transition-transform duration-300  group-hover:bg-brand-purple group-hover:text-white lg:mb-8">
                     {step.icon}
                   </div>
 
                   {/* TEXT CONTENT */}
                   <div className="flex-1 pt-2 lg:pt-0">
-                    <p className="mb-2 font-inter text-xs font-bold tracking-widest text-blue-500">
+                    <p className="mb-2 font-inter text-xs font-bold tracking-widest text-brand-purple">
                       {step.id}
                     </p>
-                    <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-blue-600">
+                    <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-brand-purple">
                       {step.title}
                     </h4>
                     <p className="font-inter text-sm text-gray-600 leading-relaxed">

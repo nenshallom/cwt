@@ -5,17 +5,17 @@ export default function AboutPurpose() {
         tag: "INNOVATE & DELIVER",
         title: "Our Mission",
         description: "To empower businesses with innovative and cutting edge digital solutions that enhance efficiency, productivity, and competitiveness. We strive to deliver tailored software that solves real world problems and drives measurable growth for every client we serve.",
-        color: "text-blue-600",
-        bgColor: "bg-blue-50",
-        borderColor: "border-blue-100",
+        color: "text-brand-purple",
+        bgColor: "bg-brand-purple/10",
+        borderColor: "border-gray-50",
       },
       {
         id: "02",
         tag: "LEAD & INSPIRE",
         title: "Our Vision",
         description: "To become a globally recognized leader in software innovation, setting the standard for excellence in digital transformation. We envision a future where every business, regardless of size, has access to world-class technology solutions that unlock their full potential.",
-        color: "text-indigo-600", // Using indigo for a subtle, premium variation
-        bgColor: "bg-indigo-50",
+        color: "text-brand-purple", 
+        bgColor: "bg-brand-purple/10",
         borderColor: "border-indigo-100",
       }
     ];
@@ -26,7 +26,7 @@ export default function AboutPurpose() {
           
           {/* HEADER AREA */}
           <div className="mx-auto max-w-3xl text-center mb-16">
-            <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-blue-600 mb-4">
+            <h2 className="hidden font-syne text-sm font-bold uppercase tracking-wider text-blue-600 mb-4">
               Our Purpose
             </h2>
             <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

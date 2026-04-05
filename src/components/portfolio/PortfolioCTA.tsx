@@ -11,16 +11,16 @@ export default function PortfolioCTA() {
   ];
 
   return (
-    <section className="bg-slate-800 py-16 lg:py-24 text-center">
+    <section className="bg-white py-16 lg:py-24 text-center">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         
         {/* Top Icon Area */}
-        <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-800 text-blue-500 shadow-inner border border-slate-700">
+        <div className="hidden mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-800 text-blue-500 shadow-inner border border-slate-700">
           <Bell  className="h-8 w-8" /> 
         </div>
 
         {/* Text Content */}
-        <h2 className="font-syne text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+        <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl lg:text-5xl">
           Ready to Start Your Project?
         </h2>
         <p className="mx-auto mt-6 max-w-2xl font-inter text-lg leading-relaxed text-slate-400">
@@ -31,14 +31,14 @@ export default function PortfolioCTA() {
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
           <Link
             href="/contact"
-            className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg bg-purple-700 px-8 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:bg-purple-500"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg bg-brand-purple px-8 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:bg-brand-purple/80"
           >
             Start a Project
           </Link>
           
           <Link
             href="/services"
-            className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg border border-slate-700 bg-slate-800 px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-slate-700 hover:border-slate-600"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-lg border-2 border-gray-200 bg-white px-8 py-3.5 text-base font-semibold text-gray-900 transition-all hover:border-gray-300 hover:bg-gray-50"
           >
             Explore Services
           </Link>
@@ -51,7 +51,7 @@ export default function PortfolioCTA() {
           </p>
           
           {/* Industry Flex Container */}
-          <div className="flex flex-wrap justify-center gap-6 sm:gap-10 lg:gap-14">
+          <div className="hidden flex flex-wrap justify-center gap-6 sm:gap-10 lg:gap-14">
             {industries.map((industry, index) => (
               <span 
                 key={index} 

@@ -3,50 +3,71 @@ import nodemailer from "nodemailer";
 const email = process.env.EMAIL_USER;
 const password = process.env.EMAIL_PASSWORD;
 
+// Updated for Gmail
 export const transporter = nodemailer.createTransport({
-  host: "smtp.zoho.com",
+  service: "gmail", 
+  host: "smtp.gmail.com",
   port: 465,
   secure: true,
   auth: {
     user: email,
-    pass: password,
+    pass: password, 
   },
 });
 
 export const mailOptions = {
   from: email,
-  to: "codewarriors02@gmail.com",
+  // Change this to the email address where you want to receive the messages:
+  to: "codewarriorstech@gmail.com", 
 };
 
 export async function sendMessage(data: {
   name: string;
-  message: string;
   email: string;
-  phone: string;
+  phone?: string;
+  company?: string;
+  service?: string;
+  message: string;
 }): Promise<string> {
 
-  const { name, message, email, phone } = data;
+  const { name, email, phone, company, service, message } = data;
 
   if (!name || !email || !message) {
-    throw Error("Name,Email and Message fields are required");
+    throw Error("Name, Email and Message fields are required");
   }
-  // Compose email message
+
   const messageData = `
     Name: ${name}
-    Message: ${message}
     Email: ${email}
-    Phone: ${phone}
+    Phone: ${phone || 'Not provided'}
+    Company: ${company || 'Not provided'}
+    Service Interest: ${service || 'Not provided'}
    
+    Message:
+    ${message}
   `;
 
-  console.log(messageData);
-  // Send email using transporter and mailOptions
+  console.log("Preparing to send via Gmail:", messageData);
+
   try {
     const info = await transporter.sendMail({
       ...mailOptions,
-      subject: "New Contact Form Submission",
-      html: `<h1>New Contact Form Submission</h1><p>${messageData}</p>`,
-      text: message,
+      replyTo: email, // Adds a reply-to header so you can just hit "Reply" in Gmail!
+      subject: `New Lead: ${name} - ${service || 'General Inquiry'}`,
+      html: `
+        <div style="font-family: sans-serif; max-width: 600px;">
+          <h2 style="color: #0ea5e9;">New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+          <p><strong>Company:</strong> ${company || 'Not provided'}</p>
+          <p><strong>Service Interest:</strong> ${service || 'Not provided'}</p>
+          <br/>
+          <h3 style="border-bottom: 1px solid #eee; padding-bottom: 10px;">Message:</h3>
+          <p style="white-space: pre-wrap;">${message}</p>
+        </div>
+      `,
+      text: messageData,
     });
 
     return `Message sent: ${info.messageId}`;
@@ -54,7 +75,7 @@ export async function sendMessage(data: {
     if (error instanceof Error) {
       throw new Error(`Failed to send message: ${error.message}`);
     } else {
-      throw new Error(`Failed to send message: Unknown error occurred`);
+      throw new Error("Failed to send message: Unknown error");
     }
   }
 }

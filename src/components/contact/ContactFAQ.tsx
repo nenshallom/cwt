@@ -42,7 +42,7 @@ export default function ContactFAQ() {
         
         {/* HEADER AREA */}
         <div className="text-center mb-12">
-          <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-[#0ea5e9] mb-4">
+          <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-brand-purple bg-brand-purple/10 w-fit mb-4 mx-auto py-2 px-3 rounded-lg">
             FAQ
           </h2>
           <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
@@ -61,19 +61,19 @@ export default function ContactFAQ() {
             return (
               <div 
                 key={index}
-                className="overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:border-blue-200 hover:shadow-md"
+                className="overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:border-brand-purple/80 hover:shadow-md"
               >
                 {/* QUESTION (Clickable Header) */}
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="flex w-full items-center justify-between gap-6 p-6 text-left sm:p-8"
                 >
-                  <span className={`font-syne text-lg font-bold transition-colors ${isOpen ? "text-purple-700" : "text-gray-900"}`}>
+                  <span className={`font-syne text-lg font-bold transition-colors ${isOpen ? "text-brand-purple" : "text-black"}`}>
                     {faq.question}
                   </span>
                   
                   {/* The Rotating Icon Box */}
-                  <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-all duration-300 ${isOpen ? "bg-black text-white rotate-180" : "bg-gray-100 text-gray-500"}`}>
+                  <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-all duration-300 ${isOpen ? "bg-brand-purple text-white rotate-180" : "bg-brand-purple/10 text-gray-500"}`}>
                     <FiChevronDown className="h-5 w-5" />
                   </div>
                 </button>

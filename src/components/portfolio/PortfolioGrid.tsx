@@ -5,60 +5,67 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function PortfolioGrid() {
-  const categories = ["All", "Education", "E-Commerce", "Health & Fitness", "Healthcare"];
+  const categories = ["All", "Software Development", "Training", "Consultation"];
 
   const [activeCategory, setActiveCategory] = useState("All");
 
-  // 3. The exact project data from your UI design
   const projects = [
     {
-      title: "Summer Coding Boot Camp",
-      category: "Education",
-      description: "A comprehensive online platform for coding bootcamp registration, course management...",
+      title: "Summer Coding Club 2024",
+      category: "Training",
+      description: "A Summer Coding class held in collaboration with Arcade British International Academy to educate over 50+ students on the basics of  Frontend programming & Scratch.",
       tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "/portproj1.png",
+      image: "/CodingClub24.png",
       link: "#",
     },
     {
-      title: "School Management Website",
-      category: "Education",
-      description: "Full-featured school management system with student portals, grade tracking...",
+      title: "Summer Coding Club 2025",
+      category: "Training",
+      description: "A 1 month Summer Coding class held virtually for kids and young adults to learn the introduction to programming languages like HTML and CSS.",
+      tech: ["React", "Node.js", "MongoDB", "Stripe"],
+      image: "/CodingClub25.jpeg",
+      link: "#",
+    },
+    {
+      title: "IBUAM UNIVERSITY PORTAL",
+      category: "Software Development",
+      description: "A comprehensive school management system for an aeronautic university with Applicant, Student and Admins portals",
       tech: ["Next.js", "PostgreSQL", "Tailwind CSS", "AWS"],
-      image: "/portproj2.jpg",
-      link: "#",
+      image: "/ibuam.png",
+      link: "https://www.ibuam.edu.ng/",
     },
     {
-      title: "Gym & Fitness Website",
-      category: "Health & Fitness",
-      description: "Dynamic fitness center website with class scheduling, membership management...",
+      title: "Love4you Dating app ",
+      category: "Software Development",
+      description: "A dating, friendship and meeting web app with unique features",
       tech: ["React", "Firebase", "Stripe", "Tailwind CSS"],
-      image: "/portproj3.jpg",
-      link: "#",
+      image: "/love4you.png",
+      link: "https://www.love4you.net/",
     },
     {
-      title: "Food Ordering App",
-      category: "E-Commerce",
-      description: "Feature-rich food delivery application with real-time order tracking, restaurant...",
+      title: "Ree's Kitchen Ordering App",
+      category: "Software Development",
+      description: "A food ordering and delivery mobile app for Ree's kitchen restaurant with real time ordering & tracking.",
       tech: ["React Native", "Node.js", "MongoDB", "Google Maps API"],
-      image: "/portproj4.jpg",
-      link: "#",
+      image: "/project4.png",
+      link: "https://example.com/project-4",
     },
-    {
-      title: "E-Commerce Platform",
-      category: "E-Commerce",
-      description: "Scalable online marketplace with inventory management, secure payments, analytics...",
-      tech: ["Next.js", "Shopify API", "Stripe", "PostgreSQL"],
-      image: "/portproj5.jpg",
-      link: "#",
-    },
-    {
-      title: "Healthcare Portal",
-      category: "Healthcare",
-      description: "Patient management system with appointment scheduling, medical records...",
-      tech: ["React", "Python", "PostgreSQL", "HIPAA Compliant"],
-      image: "/portproj6.jpg",
-      link: "#",
-    }
+    // {
+    //   title: "E-Commerce Platform",
+    //   category: "Software Dev",
+    //   description: "Scalable online marketplace with inventory management, secure payments, analytics...",
+    //   tech: ["Next.js", "Shopify API", "Stripe", "PostgreSQL"],
+    //   image: "/portproj5.jpg",
+    //   link: "#",
+    // },
+    // {
+    //   title: "Healthcare Portal",
+    //   category: "Software Dev",
+    //   description: "Patient management system with appointment scheduling, medical records...",
+    //   tech: ["React", "Python", "PostgreSQL", "HIPAA Compliant"],
+    //   image: "/portproj6.jpg",
+    //   link: "#",
+    // }
   ];
 
   // 4. The Filtering Logic
@@ -126,7 +133,7 @@ export default function PortfolioGrid() {
                 </p>
 
                 {/* Tech Stack Tags (Bottom of card) */}
-                <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
+                <div className="hidden flex-wrap gap-2 pt-4 border-t border-gray-50">
                   {project.tech.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
