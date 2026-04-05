@@ -4,7 +4,7 @@ import { FiChevronRight, FiArrowRight, FiCheckCircle, FiLayers } from "react-ico
 
 export default function ServicesHero() {
   const stats = [
-    { value: "8+", label: "Service Areas" },
+    { value: "100%", label: "Remote" },
     { value: "99%", label: "Client Satisfaction" },
     { value: "50+", label: "Projects Delivered" },
     { value: "24/7", label: "Support Available" },
@@ -23,24 +23,24 @@ export default function ServicesHero() {
             <FiChevronRight className="h-4 w-4" />
             <span className="text-black">Services</span>
           </nav>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+        <div className="">
           
           {/* LEFT COLUMN: Text, Stats, and Buttons */}
-          <div className="max-w-2xl">
+          <div className="">
             {/* Label */}
-            <h2 className="font-syne text-sm font-bold uppercase w-fit tracking-wider text-blue-600 py-2 px-3 bg-blue-500/20 rounded-lg mb-4">
+            <h2 className="font-syne text-sm font-bold uppercase w-fit tracking-wider text-brand-purple py-2 px-3 bg-brand-purple/10 rounded-lg mb-4">
               What We Do
             </h2>
             
             {/* Main Headline */}
             <h1 className="font-syne text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl leading-tight">
-              Comprehensive <br className="hidden sm:block" />
-              <span className="text-blue-600">Digital Services</span>
+              Comprehensive 
+              <span className="text-brand-purple"> Digital Services</span>
             </h1>
             
             {/* Description */}
             <p className="mt-6 font-inter text-lg text-gray-600 leading-relaxed">
-              From custom software development to AI-powered solutions, we deliver end-to-end technology services that help businesses innovate, scale, and stay ahead of the competition.
+            From consultation to developing any software solutions, we deliver end-to-end technology services that help your businesses innovate, scale and stay ahead of others.
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-2 border-y border-gray-200 py-8">
@@ -55,10 +55,11 @@ export default function ServicesHero() {
             {/* Action Buttons */}
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
-                href="/contact"
+              // link to the celendly
+                href="https://calendly.com/codewarriorstech/new-meeting"
                 className="inline-flex items-center justify-center rounded-lg bg-purple-700 px-8 py-3.5 text-base font-semibold text-white transition-all hover:bg-purple-500 shadow-sm"
               >
-                Get a Free Quote
+                Book a Free Consultation
                 <FiArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
@@ -71,7 +72,7 @@ export default function ServicesHero() {
           </div>
 
           {/* RIGHT COLUMN: Featured Image and Floating Badges */}
-          <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
+          <div className="hidden relative mx-auto w-full max-w-lg lg:max-w-none">
             {/* Main Image Container */}
             <div className="relative w-full rounded-3xl bg-gray-200 pb-[100%] shadow-2xl overflow-hidden border border-white">
                <Image 

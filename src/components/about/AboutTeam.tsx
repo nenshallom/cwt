@@ -4,47 +4,47 @@ import { FiLinkedin, FiTwitter } from "react-icons/fi";
 export default function AboutTeam() {
   const team = [
     {
-      name: "ABDULRAHMAN SADIQ",
+      name: "ABDULRAHMAN SODIQ",
       role: "CEO",
-      image: "/ceo.jpg", 
+      image: "/ceo.jpeg", 
       linkedin: "https://linkedin.com/in/a",
       twitter: "https://twitter.com/adebayo",
     },
     {
-      name: "Mucctar Ogala",
+      name: "MUCTAR MOHAMMED",
       role: "CTO",
-      image: "/team-2.jpg",
+      image: "/cto.jpeg",
       linkedin: "https://linkedin.com/in/chioma",
       twitter: "https://twitter.com/chioma",
     },
     {
-      name: "Dorcas Ayoko",
-      role: "Project Manager",
-      image: "/team-3.jpg",
-      linkedin: "https://linkedin.com/in/fatima",
-      twitter: "https://twitter.com/fatima",
-    },
-    {
-      name: "Tunde Bakare",
-      role: "Backend Engineer",
-      image: "/team-4.jpg",
+      name: "Halima Sodiq",
+      role: "CFO",
+      image: "/cfo.jpeg",
       linkedin: "https://linkedin.com/in/tunde",
       twitter: "https://twitter.com/tunde",
-    },
-    {
-      name: "Thelma Stephen",
-      role: "UI/UX Designer",
-      image: "/team-5.jpg",
-      linkedin: "https://linkedin.com/in/emeka",
-      twitter: "https://twitter.com/emeka",
-    },
-    {
-      name: "Ngozi Eze",
-      role: "Mobile Developer",
-      image: "/team-6.jpg",
-      linkedin: "https://linkedin.com/in/ngozi",
-      twitter: "https://twitter.com/ngozi",
     }
+    // {
+    //   name: "Dorcas Ayoko",
+    //   role: "Project Manager",
+    //   image: "/team-3.jpg",
+    //   linkedin: "https://linkedin.com/in/fatima",
+    //   twitter: "https://twitter.com/fatima",
+    // },
+    // {
+    //   name: "Thelma Stephen",
+    //   role: "UI/UX Designer",
+    //   image: "/team-5.jpg",
+    //   linkedin: "https://linkedin.com/in/emeka",
+    //   twitter: "https://twitter.com/emeka",
+    // },
+    // {
+    //   name: "Ngozi Eze",
+    //   role: "Mobile Developer",
+    //   image: "/team-6.jpg",
+    //   linkedin: "https://linkedin.com/in/ngozi",
+    //   twitter: "https://twitter.com/ngozi",
+    // }
   ];
 
   return (
@@ -53,13 +53,13 @@ export default function AboutTeam() {
         
         {/* HEADER AREA */}
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-blue-600 mb-4">
+          <h2 className="hidden font-syne text-sm font-bold uppercase tracking-wider text-blue-600 mb-4">
             Our People
           </h2>
           <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
-            Meet the Team
+            Meet the Top Leadership
           </h3>
-          <p className="font-inter text-lg text-gray-600 leading-relaxed">
+          <p className="hidden font-inter text-lg text-gray-600 leading-relaxed">
             A passionate group of developers, designers, and strategists dedicated to building exceptional software solutions.
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function AboutTeam() {
                   <h4 className="font-syne text-2xl font-bold text-white leading-tight">
                     {person.name}
                   </h4>
-                  <p className="mt-1 font-inter text-sm font-medium text-blue-300 uppercase tracking-widest">
+                  <p className="mt-1 font-inter text-sm text-white font-bold uppercase tracking-widest">
                     {person.role}
                   </p>
                 </div>

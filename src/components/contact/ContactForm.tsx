@@ -7,12 +7,12 @@ import {
   FiPhoneCall, 
   FiMapPin,
   FiFacebook,
-  FiTwitter,
   FiInstagram,
   FiLinkedin,
   FiSend
 } from "react-icons/fi";
 import { FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function ContactForm() {
   return (
@@ -84,13 +84,26 @@ export default function ContactForm() {
             {/* Socials */}
             <div className="mt-4">
               <h4 className="font-syne text-lg font-bold text-gray-900 mb-4">Follow Us</h4>
-              <div className="flex gap-4">
-                {[FiFacebook, FiTwitter, FiInstagram, FaTiktok, FaYoutube, FiLinkedin].map((Icon, index) => (
-                  <a key={index} href="#" className="flex h-10 w-10 items-center justify-center rounded-full bg-white border border-gray-200 text-brand-purple transition-all hover:bg-brand-purple hover:text-white shadow-sm">
-                    <Icon className="h-4 w-4" />
-                  </a>
-                ))}
-              </div>
+              <div className="flex gap-4 flex-wrap">
+                            <a href="https://www.facebook.com/codewariors02" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                              <FiFacebook className="h-4 w-4" />
+                            </a>
+                            <a href="https://x.com/codewarriors02?t=YsAvpmq0Uix4pQETxEKMTw&s=09 " className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                              <FaXTwitter className="h-4 w-4" /> {/* Represents X */}
+                            </a>
+                            <a href="https://www.instagram.com/code_warriors_team_ " className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                              <FiInstagram className="h-4 w-4" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/code-warriors-tech/" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                              <FiLinkedin className="h-4 w-4" />
+                            </a>
+                            <a href="https://www.tiktok.com/@code_warriors_team" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                              <FaTiktok className="h-4 w-4" />
+                            </a>
+                            <a href=" https://youtube.com/@codewarriorstech" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                              <FaYoutube className="h-4 w-4" />
+                            </a>
+                          </div>
             </div>
           </div>
 

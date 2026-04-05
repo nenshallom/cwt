@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import PortfolioCTA from "@/components/portfolio/PortfolioCTA"; 
 import { FiArrowRight, FiCheckCircle, FiChevronLeft } from "react-icons/fi";
 
 // 1. The Data Dictionary
@@ -60,13 +61,13 @@ export default async function ExpertisePage({
     }
 
   return (
-    <div className="bg-gray-50 min-h-screen pb-24 pt-20">
+    <div className="bg-gray-50 min-h-screen pt-20">
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
         
         {/* Back Button & Breadcrumb */}
         <Link 
           href="/#services" // Assuming your homepage services section has id="services"
-          className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-blue-600 transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-brand-purple transition-colors mb-8"
         >
           <FiChevronLeft className="h-4 w-4" />
           Back to Services
@@ -93,12 +94,12 @@ export default async function ExpertisePage({
             >
               <div className="flex items-center gap-4">
                 {/* Icon Container (Matches the checkmark style in modern UIs) */}
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-purple/10 text-brand-purple transition-colors group-hover:bg-brand-purple group-hover:text-white">
                   <FiCheckCircle className="h-5 w-5" />
                 </div>
                 
                 {/* Card Title */}
-                <h3 className="font-syne text-lg font-bold text-gray-900 transition-colors group-hover:text-blue-600">
+                <h3 className="font-syne text-lg font-bold text-gray-900 transition-colors group-hover:text-brand-purple">
                   {cardText}
                 </h3>
               </div>
@@ -107,25 +108,9 @@ export default async function ExpertisePage({
           ))}
         </div>
         </div>
-       
-
-        {/* Bottom CTA for the individual page */}
-        <div className="mt-16 rounded-3xl bg-blue-600 p-8 sm:p-12 text-center shadow-xl">
-          <h2 className="font-syne text-2xl font-bold text-white mb-4">
-            Ready to get started with {expertise.heading}?
-          </h2>
-          <p className="font-inter text-blue-100 mb-8 max-w-2xl mx-auto">
-            Contact our team today to discuss your specific requirements and see how we can help you achieve your goals.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3.5 text-base font-bold text-blue-600 transition-all hover:bg-gray-50 hover:shadow-lg"
-          >
-            Contact Us
-          </Link>
-        </div>
-
       </div>
+      {/* Bottom CTA for the individual page */}
+      <PortfolioCTA />
     </div>
   );
 }

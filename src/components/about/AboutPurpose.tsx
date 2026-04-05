@@ -2,18 +2,18 @@ export default function AboutPurpose() {
     const purposes = [
       {
         id: "01",
-        tag: "INNOVATE & DELIVER",
+        tag: "INNOVATION WITH PURPORSE",
         title: "Our Mission",
-        description: "To empower businesses with innovative and cutting edge digital solutions that enhance efficiency, productivity, and competitiveness. We strive to deliver tailored software that solves real world problems and drives measurable growth for every client we serve.",
+        description: "To empower the next generation of digital warriors through cutting edge software solutions and transformative tech education creating a world where innovation is accessible, impactful and inclusive",
         color: "text-brand-purple",
         bgColor: "bg-brand-purple/10",
         borderColor: "border-gray-50",
       },
       {
         id: "02",
-        tag: "LEAD & INSPIRE",
+        tag: "EXCELLENCE IN EXECUTION",
         title: "Our Vision",
-        description: "To become a globally recognized leader in software innovation, setting the standard for excellence in digital transformation. We envision a future where every business, regardless of size, has access to world-class technology solutions that unlock their full potential.",
+        description: "To Build worldclass software, that solves real world problems and deliver high impact Tech training that unlocks human potentia",
         color: "text-brand-purple", 
         bgColor: "bg-brand-purple/10",
         borderColor: "border-indigo-100",

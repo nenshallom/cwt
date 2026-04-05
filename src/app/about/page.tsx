@@ -1,6 +1,6 @@
 import AboutHero from "@/components/about/AboutHero";
 import AboutPurpose from "@/components/about/AboutPurpose";
-import AboutStats from "@/components/about/AboutStats";
+// import AboutStats from "@/components/about/AboutStats";
 import AboutTeam from "@/components/about/AboutTeam";
 import AboutCTA from "@/components/about/AboutCTA"; // <-- Import it
 
@@ -14,7 +14,7 @@ export default function AboutPage() {
     <>
       <AboutHero />
       <AboutPurpose />
-      <AboutStats />
+      {/* <AboutStats /> */}
       <AboutTeam />
       <AboutCTA /> 
     </>

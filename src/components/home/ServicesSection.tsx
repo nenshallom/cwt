@@ -6,21 +6,21 @@ export default function ServicesSection() {
   const services = [
     {
       title: "Software Development",
-      description: "Custom solutions from concept to final product using diverse technologies and methodologies.",
+      description: "Our software development services bring your ideas to life with diverse technologies and methodologies. From concept to final product, we deliver custom solutions tailored to your unique business requirements.",
       icon: <SquareCode className="h-6 w-6" />,
       color: "bg-[#7C3AED]/10 text-[#7C3AED] group-hover:bg-[#7C3AED] group-hover:text-white", 
       href: "/services/software-engineering",
     },
     {
       title: "Consultation",
-      description: "Scalable and user-friendly software delivered as a service to elevate your business.",
+      description: "Our consultation services turn complex business ideas into actionable roadmaps through deep industry insights and strategic foresight. From the initial assessment to sustainable execution, we provide high-impact guidance tailored to your unique vision and business objectives.",
       icon: <FiCloud className="h-6 w-6" />,
       color: "bg-[#7C3AED]/10 text-[#7C3AED] group-hover:bg-[#7C3AED] group-hover:text-white",
       href: "/services/consultation",
     },
     {
       title: "Training and Tutoring",
-      description: "User-friendly and innovative mobile apps for Android and iOS platforms.",
+      description: "Our training and tutoring services bridge the gap between curiosity and mastery through personalized learning paths and hands-on mentorship. From foundational concepts to advanced expertise, we provide tailored educational experiences designed to meet your unique goals and accelerate your growth.",
       icon: <FiSmartphone className="h-6 w-6" />,
       color: "bg-[#7C3AED]/10 text-[#7C3AED] group-hover:bg-[#7C3AED] group-hover:text-white",
       href: "/services/training-and-tutoring",

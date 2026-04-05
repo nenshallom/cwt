@@ -1,6 +1,7 @@
 import ServicesHero from "@/components/services/ServicesHero";
-import ServicesExpertise from "@/components/services/ServicesExpertise";
+// import ServicesExpertise from "@/components/services/ServicesExpertise";
 import ServicesWorkflow from "@/components/services/ServicesWorkflow";
+import ServicesSection from "@/components/home/ServicesSection";
 // import ServicesTechStack from "@/components/services/ServicesTechStack";
 import ServicesCTA from "@/components/services/ServicesCTA";
 
@@ -13,7 +14,8 @@ export default function ServicesPage() {
   return (
     <>
       <ServicesHero />
-      <ServicesExpertise />
+      {/* <ServicesExpertise /> */}
+      <ServicesSection />
       <ServicesWorkflow />
       {/* <ServicesTechStack /> */}
       <ServicesCTA />

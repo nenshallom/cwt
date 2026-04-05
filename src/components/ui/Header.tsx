@@ -2,18 +2,21 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi"; 
+// 1. Import usePathname from next/navigation
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // 2. Initialize the hook to get the current URL path
+  const pathname = usePathname();
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/portfolio" },
-    { name: "Careers", href: "/careers" },
+    { name: "Careers", href: "#" },
     { name: "Contact", href: "/contact" },
-    { name: "Blog", href: "#" },
   ];
 
   // Function to close the mobile menu when a link is clicked
@@ -35,28 +38,27 @@ export default function Header() {
 
         {/* 2. Desktop Navigation  */}
         <nav className="hidden lg:flex lg:gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="font-inter text-md font-medium text-gray-600 transition-colors hover:text-brand-purple"
-            >
-              {link.name}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            // 3a. Check if this specific link is the active page
+            const isActive = pathname === link.href;
+            
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                // Apply 'text-brand-purple' if active, otherwise use the default gray
+                className={`font-inter text-md font-medium transition-colors hover:text-brand-purple ${
+                  isActive ? "text-brand-purple" : "text-gray-600"
+                }`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* 3. Desktop CTA Button & Mobile Toggle */}
-        <div className="flex items-center gap-4">
-          {/* CTA Button  */}
-          <div className="hidden lg:block">
-            <Link
-              href="/contact"
-              className="rounded-md bg-purple-700 px-6 py-2.5 text-md font-bold text-white shadow-sm transition hover:bg-purple-500"
-            >
-              Get Started
-            </Link>
-          </div>
+        <div className="">
 
           {/* Mobile Menu Toggle Button (Hidden on desktop) */}
           <button
@@ -66,9 +68,9 @@ export default function Header() {
             aria-label="Toggle mobile menu"
           >
             {isMobileMenuOpen ? (
-              <FiX className="h-6 w-6" /> // Show 'X' if open
+              <FiX className="h-6 w-6" /> 
             ) : (
-              <FiMenu className="h-6 w-6" /> // Show 'Hamburger' if closed
+              <FiMenu className="h-6 w-6" /> 
             )}
           </button>
         </div>
@@ -78,23 +80,24 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="lg:hidden border-t border-gray-100 bg-white px-4 py-6 shadow-lg">
           <nav className="flex flex-col space-y-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={closeMenu} // Close menu when user navigates
-                className="font-inter block text-base font-medium text-gray-800 hover:text-blue-600"
-              >
-                {link.name}
-              </Link>
-            ))}
-            <Link
-              href="/contact"
-              onClick={closeMenu}
-              className="mt-4 block w-full rounded-md bg-blue-600 px-4 py-3 text-center text-base font-semibold text-white shadow-sm hover:bg-blue-500"
-            >
-              Get Started
-            </Link>
+            {navLinks.map((link) => {
+              // 3b. Check active state for the mobile menu links as well
+              const isActive = pathname === link.href;
+
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={closeMenu} 
+                  // I updated the mobile hover state to match your purple theme as well!
+                  className={`font-inter block text-base font-medium hover:text-purple-600 ${
+                    isActive ? "text-purple-700" : "text-gray-800"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </nav>
         </div>
       )}

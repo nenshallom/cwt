@@ -1,26 +1,26 @@
 import Link from "next/link";
-import { Bell } from 'lucide-react';
+import Image from "next/image";
 
 export default function PortfolioCTA() {
-  const industries = [
-    "Education",
-    "Healthcare",
-    "E-Commerce",
-    "Fitness",
-    "Finance",
-  ];
 
   return (
-    <section className="bg-white py-16 lg:py-24 text-center">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-white py-16 lg:py-24 text-center">
+
+      <Image 
+        src="/aboutCTA.jpg" 
+        alt="Office Background" 
+        layout="fill" 
+        objectFit="cover" 
+        className="absolute inset-0 z-0 opacity-90 grayscale" 
+      /> 
+      {/* overlay */}
+      <div className="absolute inset-0 z-10 bg-slate-900/70"></div>
+
+      <div className="relative mx-auto max-w-4xl z-20 px-4 sm:px-6 lg:px-8">
         
-        {/* Top Icon Area */}
-        <div className="hidden mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-slate-800 text-blue-500 shadow-inner border border-slate-700">
-          <Bell  className="h-8 w-8" /> 
-        </div>
 
         {/* Text Content */}
-        <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl lg:text-5xl">
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
           Ready to Start Your Project?
         </h2>
         <p className="mx-auto mt-6 max-w-2xl font-inter text-lg leading-relaxed text-slate-400">
@@ -45,22 +45,11 @@ export default function PortfolioCTA() {
         </div>
 
         {/* TRUST BANNER / INDUSTRIES ROW */}
-        <div className="mt-20 border-t border-slate-800 pt-12">
-          <p className="mb-8 font-inter text-sm font-semibold uppercase tracking-widest text-slate-500">
+        <div className="mt-20 border-t border-gray-500 pt-12">
+          <p className="mb-8 font-inter text-sm font-semibold uppercase tracking-widest text-gray-200">
             Trusted by businesses across industries
           </p>
           
-          {/* Industry Flex Container */}
-          <div className="hidden flex flex-wrap justify-center gap-6 sm:gap-10 lg:gap-14">
-            {industries.map((industry, index) => (
-              <span 
-                key={index} 
-                className="font-syne text-lg font-bold text-slate-300 transition-colors duration-300 cursor-default"
-              >
-                {industry}
-              </span>
-            ))}
-          </div>
         </div>
 
       </div>
