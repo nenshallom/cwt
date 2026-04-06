@@ -18,20 +18,6 @@ export default function Footer() {
   return (
     <footer className="bg-[#a6a6a6] text-slate-300">
       
-      {/* 1. NEWSLETTER SECTION */}
-      <div className="">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:px-8">
-          <div>
-            <h3 className="font-syne text-2xl font-bold text-white">Stay Updated</h3>
-            <p className="mt-2 font-inter text-sm text-white">
-              Get the latest news and insights delivered to your inbox.
-            </p>
-          </div>
-
-        
-        </div>
-      </div>
-
       {/* 2. MAIN FOOTER CONTENT (4 Columns) */}
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">

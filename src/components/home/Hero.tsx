@@ -88,31 +88,28 @@ export default function Hero() {
             </div>
 
             {/* Floating Stats Card */}
-            <div className="absolute -bottom-6 -left-6 rounded-xl bg-white p-6 shadow-xl border border-gray-100 sm:-bottom-8 sm:-left-8">
-              <div className="flex items-center gap-4">
-                <div className="hidden flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-[#7C3AED]">
-                  <FiCode className="h-6 w-6" />
-                </div>
-                <div className="flex gap-6 sm:gap-8">
+            <div className="absolute -bottom-6 -left-6 rounded-xl bg-white p-2 md:p-6 shadow-xl border border-gray-100 sm:-bottom-8 sm:-left-8">
+              <div className="flex items-center gap-1">
+                <div className="flex gap-3 sm:gap-2">
                 <div>
-                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">24/7</p>
-                  <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Support</p>
+                  <p className="font-syne text-[13px] sm:text-2xl lg:text-3xl font-extrabold text-[#7C3AED]">24/7</p>
+                  <p className="font-inter text-[10px] sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Support</p>
                 </div>
 
                 <div className="w-px bg-gray-200"></div>
                 <div>
-                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">100%</p>
-                  <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Remote</p>
+                  <p className="font-syne text-[13px] sm:text-2xl lg:text-3xl font-extrabold text-[#7C3AED]">100%</p>
+                  <p className="font-inter text-[10px] sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Remote</p>
                 </div>
                 <div className="w-px bg-gray-200"></div>
                 <div>
-                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">15+</p>
-                  <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Team & Interns</p>
+                  <p className="font-syne text-[13px] sm:text-2xl lg:text-3xl font-extrabold text-[#7C3AED]">15+</p>
+                  <p className="font-inter text-[10px] sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Team & Interns</p>
                 </div>
                 <div className="w-px bg-gray-200"></div>
                 <div>
-                  <p className="font-syne text-3xl sm:text-2xl font-extrabold text-[#7C3AED]">4+</p>
-                  <p className="font-inter text-xs sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Years Experience</p>
+                  <p className="font-syne text-[13px] sm:text-2xl lg:text-3xl font-extrabold text-[#7C3AED]">4+</p>
+                  <p className="font-inter text-[10px] sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Years Experience</p>
                 </div>
               </div>
               </div>
