@@ -39,7 +39,7 @@ export default function ProcessSection() {
           <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-[#7C3AED] py-2 px-3 bg-[#7C3AED]/10 rounded-lg">
             How We Work
           </h2>
-          <h3 className="mt-4 font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h3 className="mt-4 font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl">
              Our Work Culture
           </h3>
           <p className="mt-4 font-inter text-lg text-gray-600">
@@ -70,7 +70,7 @@ export default function ProcessSection() {
                 </div>
 
                 {/* Step Title with hover effect */}
-                <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-[#7C3AED]">
+                <h4 className="mb-3 font-syne text-xl font-bold text-brand-indigo transition-colors duration-300 group-hover:text-[#7C3AED]">
                   {step.title}
                 </h4>
 

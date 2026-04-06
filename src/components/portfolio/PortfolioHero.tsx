@@ -10,19 +10,19 @@ export default function PortfolioHero() {
   ];
 
   return (
-    <section className="bg-gray-50 pt-16 pb-16  lg:pb-24 border-b border-gray-200">
+    <section className="bg-gray-50  pt-16 pb-20 lg:pt-20 lg:pb-28 border-b border-gray-200">
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
         
         <div className=" max-w-3xl text-left">
           {/* Breadcrumb Navigation */}
           <nav className="mb-6 flex items-center gap-2 text-sm font-medium text-gray-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-brand-purple transition-colors">Home</Link>
             <FiChevronRight className="h-4 w-4" />
             <span className="text-black">Portfolio</span>
           </nav>
 
           {/* Main Headers */}
-          <h1 className="font-syne text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 className="font-syne text-4xl font-extrabold tracking-tight text-brand-indigo sm:text-5xl">
             Our <span className="text-brand-purple">Portfolio</span>
           </h1>
           <p className="mt-6 font-inter text-lg text-gray-600 leading-relaxed">

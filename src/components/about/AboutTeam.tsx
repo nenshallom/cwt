@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FiLinkedin } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function AboutTeam() {
@@ -25,27 +25,6 @@ export default function AboutTeam() {
       linkedin: "https://linkedin.com/in/tunde",
       twitter: "https://twitter.com/tunde",
     }
-    // {
-    //   name: "Dorcas Ayoko",
-    //   role: "Project Manager",
-    //   image: "/team-3.jpg",
-    //   linkedin: "https://linkedin.com/in/fatima",
-    //   twitter: "https://twitter.com/fatima",
-    // },
-    // {
-    //   name: "Thelma Stephen",
-    //   role: "UI/UX Designer",
-    //   image: "/team-5.jpg",
-    //   linkedin: "https://linkedin.com/in/emeka",
-    //   twitter: "https://twitter.com/emeka",
-    // },
-    // {
-    //   name: "Ngozi Eze",
-    //   role: "Mobile Developer",
-    //   image: "/team-6.jpg",
-    //   linkedin: "https://linkedin.com/in/ngozi",
-    //   twitter: "https://twitter.com/ngozi",
-    // }
   ];
 
   return (
@@ -54,15 +33,9 @@ export default function AboutTeam() {
         
         {/* HEADER AREA */}
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="hidden font-syne text-sm font-bold uppercase tracking-wider text-blue-600 mb-4">
-            Our People
-          </h2>
-          <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
+          <h3 className="font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl mb-6">
             Meet the Top Leadership
           </h3>
-          <p className="hidden font-inter text-lg text-gray-600 leading-relaxed">
-            A passionate group of developers, designers, and strategists dedicated to building exceptional software solutions.
-          </p>
         </div>
 
         {/* TEAM GRID */}
@@ -84,7 +57,7 @@ export default function AboutTeam() {
                 
                 {/* 2. Dark Gradient Overlay */}
                 {/* Hidden by default, fades in on hover to make white text readable */}
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-brand-indigo/90 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
 
                 {/* 3. Social Icons */}
                 <div className="absolute top-5 right-5 z-30 flex flex-col gap-3 opacity-0 transition-all duration-300 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0">

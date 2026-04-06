@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { FiCheckCircle, FiArrowRight } from "react-icons/fi";
 
 export default function AboutSection() {
@@ -30,7 +29,7 @@ export default function AboutSection() {
             
 
             {/* Main Headline */}
-            <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl leading-tight">
+            <h3 className="font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl leading-tight">
               Delivering Tailored Solutions for 
               <span className="text-brand-purple"> Unique Business Needs</span>
             </h3>
@@ -61,7 +60,6 @@ export default function AboutSection() {
                 <FiArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
-
           </div>
         </div>
       </div>

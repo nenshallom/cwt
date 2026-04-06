@@ -64,7 +64,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white pb-16 lg:pt-16 lg:pb-24">
+    <section className="relative overflow-hidden bg-white pt-16 pb-20 lg:pt-20 lg:pb-28">
       <div className="mx-auto max-w-[95rem] px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* HEADER AREA */}
@@ -78,7 +78,7 @@ export default function ContactForm() {
           <h2 className="font-syne text-sm font-bold uppercase tracking-wider py-2 px-3 rounded-lg text-brand-purple bg-brand-purple/10 mb-4 w-fit">
             GET IN TOUCH
           </h2>
-          <h1 className="font-syne text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-6">
+          <h1 className="font-syne text-4xl font-extrabold tracking-tight text-brand-indigo sm:text-5xl lg:text-6xl mb-6">
             Let's Start a <span className="text-brand-purple">Conversation</span>
           </h1>
           <p className="font-inter text-lg text-gray-600 leading-relaxed max-w-2xl">
@@ -94,12 +94,12 @@ export default function ContactForm() {
             
             {/* Email Card */}
             <div className="flex items-start gap-4 rounded-2xl bg-white p-6 shadow-sm border border-gray-100">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-50 text-purple-700">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-purple/10 text-brand-purple">
                 <FiMail className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-syne text-lg font-bold text-gray-900">Email Us</h4>
-                <p className="mt-1 font-inter text-sm font-medium text-gray-900">codewarriorstech@gmail.com</p>
+                <h4 className="font-syne text-lg font-bold text-brand-indigo">Email Us</h4>
+                <p className="mt-1 font-inter text-sm font-medium text-brand-indigo">codewarriorstech@gmail.com</p>
                 <p className="mt-1 font-inter text-xs text-gray-500">We reply within 24 hours</p>
               </div>
             </div>
@@ -110,20 +110,20 @@ export default function ContactForm() {
                 <FiPhoneCall className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-syne text-lg font-bold text-gray-900">Call Us</h4>
-                <p className="mt-1 font-inter text-sm font-medium text-gray-900">+234 805 657 1766</p>
+                <h4 className="font-syne text-lg font-bold text-brand-indigo">Call Us</h4>
+                <p className="mt-1 font-inter text-sm font-medium text-brand-indigo">+234 805 657 1766</p>
                 <p className="mt-1 font-inter text-xs text-gray-500">Mon - Fri, 9am - 6pm WAT</p>
               </div>
             </div>
 
             {/* Visit Card */}
             <div className="flex items-start gap-4 rounded-2xl bg-white p-6 shadow-sm border border-gray-100">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-50 text-purple-700">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-purple/10 text-brand-purple">
                 <FiMapPin className="h-6 w-6" />
               </div>
               <div>
-                <h4 className="font-syne text-lg font-bold text-gray-900">Visit Us</h4>
-                <p className="mt-1 font-inter text-sm font-medium text-gray-900">Kaduna, Nigeria</p>
+                <h4 className="font-syne text-lg font-bold text-brand-indigo">Visit Us</h4>
+                <p className="mt-1 font-inter text-sm font-medium text-brand-indigo">Kaduna, Nigeria</p>
                 <p className="mt-1 font-inter text-xs text-gray-500">Our headquarters</p>
               </div>
             </div>

@@ -18,11 +18,11 @@ export default function Footer() {
   return (
     <footer className="bg-[#a6a6a6] text-slate-300">
       
-      {/* 2. MAIN FOOTER CONTENT (4 Columns) */}
+      {/* 2. MAIN FOOTER CONTENT  */}
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           
-          {/* Column 1: Brand & Socials */}
+          {/* Column 1*/}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2">
               <span>
@@ -55,7 +55,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+          {/* Column 2*/}
           <div>
             <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Quick Links</h4>
             <ul className="space-y-4 font-inter text-sm text-white">
@@ -79,7 +79,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact Us */}
+          {/* Column 4*/}
           <div>
             <h4 className="font-syne text-sm font-bold uppercase tracking-wider text-white mb-6">Contact Us</h4>
             <ul className="space-y-4 font-inter text-sm text-white">

@@ -21,15 +21,12 @@ export default function AboutPurpose() {
     ];
   
     return (
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-white py-16 lg:py-20">
         <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
           
           {/* HEADER AREA */}
           <div className="mx-auto max-w-3xl text-center mb-16">
-            <h2 className="hidden font-syne text-sm font-bold uppercase tracking-wider text-blue-600 mb-4">
-              Our Purpose
-            </h2>
-            <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h3 className="font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl">
               Mission & Vision
             </h3>
           </div>
@@ -52,7 +49,7 @@ export default function AboutPurpose() {
                 </div>
   
                 {/* Text Content */}
-                <h4 className="mb-4 font-syne text-3xl font-bold text-gray-900">
+                <h4 className="mb-4 font-syne text-3xl font-bold text-brand-indigo">
                   {item.title}
                 </h4>
                 <p className="flex-1 font-inter text-lg leading-relaxed text-gray-600">

@@ -24,13 +24,6 @@ export default function ProjectsSection() {
       image: "/love4you.png",
       link: "https://www.love4you.net/",
     },
-    // {
-    //   category: "Fitness E-commerce",
-    //   title: "Gym & Fitness Website",
-    //   client: "Jane Meldrun",
-    //   image: "/project3.png",
-    //   link: "https://example.com/project-3",
-    // },
     {
       category: "Mobile App",
       title: "Ree's Kitchen Ordering App",
@@ -49,7 +42,7 @@ export default function ProjectsSection() {
           <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-[#7C3AED] py-2 px-3 bg-[#7C3AED]/10 rounded-lg">
             Our Work
           </h2>
-          <h3 className="mt-4 font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h3 className="mt-4 font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl">
             Completed Projects
           </h3>
           <p className="mt-4 font-inter text-lg text-gray-600">
@@ -95,7 +88,7 @@ export default function ProjectsSection() {
                   {project.category}
                 </span>
 
-                <h4 className="mb-2 font-syne text-2xl font-bold text-gray-900 transition-colors group-hover:text-purple-700">
+                <h4 className="mb-2 font-syne text-2xl font-bold text-brand-indigo transition-colors group-hover:text-purple-700">
                   {project.title}
                 </h4>
 

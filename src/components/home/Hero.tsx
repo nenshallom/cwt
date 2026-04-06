@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FiArrowRight, FiCode } from "react-icons/fi"; 
+import { FiArrowRight } from "react-icons/fi"; 
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white pt-16 pb-20 lg:pt-20 lg:pb-28 mx-auto">
-     <div className="absolute top-80 left-[100px] w-72 h-72 bg-[#7C3AED]/20 border rounded-full blur-3xl pointer-events-none"></div>
+     <div className="absolute top-80 left-[100px] w-72 h-72 bg-brand-purple/20 border rounded-full blur-3xl pointer-events-none"></div>
       {/* Max width wrapper to keep content centered and constrained */}
       <div className="mx-auto max-w-[90rem] px-4 sm:px-6">
       
@@ -13,14 +13,14 @@ export default function Hero() {
           
           {/* LEFT COLUMN: Text and Buttons */}
           <div className="max-w-2xl">
-            <div className="inline-flex items-center rounded-full bg-[#7C3AED]/10 px-4 py-3 text-md font-semibold text-[#7C3AED] mb-6 font-inter">
+            <div className="inline-flex items-center rounded-full bg-brand-purple/10 px-4 py-3 text-md font-semibold text-brand-purple mb-6 font-inter">
               Welcome to Code Warriors Tech
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-syne text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+            <h1 className="font-syne text-4xl font-extrabold tracking-tight text-brand-indigo sm:text-5xl lg:text-6xl">
             Building Secure & Innovative <br className="hidden sm:block" />
-              <span className="text-[#7C3AED]">Software Solutions</span>
+              <span className="text-brand-purple">Software Solutions</span>
             </h1>
 
             {/* Subheadline description */}
@@ -39,7 +39,7 @@ export default function Hero() {
               </Link>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-gray-200 bg-white px-8 py-3.5 text-base font-semibold text-gray-900 transition-all hover:border-gray-300 hover:bg-gray-50"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-gray-200 bg-white px-8 py-3.5 text-base font-semibold text-black transition-all hover:border-gray-300 hover:bg-gray-50"
               >
                 See past Projects
               </Link>
@@ -49,33 +49,13 @@ export default function Hero() {
             <div className="flex gap-6 mt-5 items-center text-center">
               
               <div>
-                <p className="font-syne text-xl md:text-3xl font-bold text-black">50+</p>
+                <p className="font-syne text-xl md:text-3xl font-bold text-brand-indigo">50+</p>
                 <p className="font-inter text-sm font-medium text-gray-600">Projects Completed</p>
               </div>
               
               <div>
-                <p className="font-syne text-xl md:text-3xl font-bold text-black">30+</p>
+                <p className="font-syne text-xl md:text-3xl font-bold text-brand-indigo">30+</p>
                 <p className="font-inter text-sm font-medium text-gray-600">Satisfied Clients</p>
-              </div>
-              
-              <div className="hidden">
-                <p className="font-syne text-xl md:text-2xl font-bold text-black">4+</p>
-                <p className="font-inter text-sm font-medium text-gray-600">Experience</p>
-              </div>
-
-              <div className="hidden">
-                <p className="font-syne text-xl md:text-2xl font-bold text-black">100%</p>
-                <p className="font-inter text-sm font-medium text-gray-600">Remote</p>
-              </div>
-
-              <div className="hidden">
-                <p className="font-syne text-xl md:text-2xl font-bold text-black">24/7</p>
-                <p className="font-inter text-sm font-medium text-gray-600">Support</p>
-              </div>
-
-              <div className="hidden">
-                <p className="font-syne text-xl md:text-2xl font-bold text-black">15+</p>
-                <p className="font-inter text-sm font-medium text-gray-600">Team & Interns</p>
               </div>
               
             </div>
@@ -114,8 +94,6 @@ export default function Hero() {
               </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>

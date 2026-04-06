@@ -42,7 +42,7 @@ export default function ServicesWorkflow() {
           <h2 className="ont-syne text-sm font-bold uppercase w-fit tracking-wider text-brand-purple py-2 px-3 bg-brand-purple/10 rounded-lg mx-auto mb-4">
             How We Work
           </h2>
-          <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl leading-tight mb-6">
+          <h3 className="font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl leading-tight mb-6">
             Our Development Process
           </h3>
           <p className="font-inter text-lg text-gray-600 leading-relaxed">
@@ -71,7 +71,7 @@ export default function ServicesWorkflow() {
                 </div>
 
                 {/* Title */}
-                <h4 className="mb-4 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-brand-purple">
+                <h4 className="mb-4 font-syne text-xl font-bold text-brand-indigo transition-colors group-hover:text-brand-purple">
                   {step.title}
                 </h4>
 

@@ -14,7 +14,6 @@ export default function PortfolioGrid() {
       title: "Summer Coding Club 2024",
       category: "Training",
       description: "A Summer Coding class held in collaboration with Arcade British International Academy to educate over 50+ students on the basics of  Frontend programming & Scratch.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
       image: "/CodingClub24.png",
       link: "#",
     },
@@ -22,7 +21,6 @@ export default function PortfolioGrid() {
       title: "Summer Coding Club 2025",
       category: "Training",
       description: "A 1 month Summer Coding class held virtually for kids and young adults to learn the introduction to programming languages like HTML and CSS.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
       image: "/CodingClub25.jpeg",
       link: "#",
     },
@@ -30,7 +28,6 @@ export default function PortfolioGrid() {
       title: "IBUAM UNIVERSITY PORTAL",
       category: "Software Development",
       description: "A comprehensive school management system for an aeronautic university with Applicant, Student and Admins portals",
-      tech: ["Next.js", "PostgreSQL", "Tailwind CSS", "AWS"],
       image: "/ibuam.png",
       link: "https://www.ibuam.edu.ng/",
     },
@@ -38,7 +35,6 @@ export default function PortfolioGrid() {
       title: "Love4you Dating app ",
       category: "Software Development",
       description: "A dating, friendship and meeting web app with unique features",
-      tech: ["React", "Firebase", "Stripe", "Tailwind CSS"],
       image: "/love4you.png",
       link: "https://www.love4you.net/",
     },
@@ -46,30 +42,12 @@ export default function PortfolioGrid() {
       title: "Ree's Kitchen Ordering App",
       category: "Software Development",
       description: "A food ordering and delivery mobile app for Ree's kitchen restaurant with real time ordering & tracking.",
-      tech: ["React Native", "Node.js", "MongoDB", "Google Maps API"],
       image: "/project4.png",
       link: "https://example.com/project-4",
-    },
-    // {
-    //   title: "E-Commerce Platform",
-    //   category: "Software Dev",
-    //   description: "Scalable online marketplace with inventory management, secure payments, analytics...",
-    //   tech: ["Next.js", "Shopify API", "Stripe", "PostgreSQL"],
-    //   image: "/portproj5.jpg",
-    //   link: "#",
-    // },
-    // {
-    //   title: "Healthcare Portal",
-    //   category: "Software Dev",
-    //   description: "Patient management system with appointment scheduling, medical records...",
-    //   tech: ["React", "Python", "PostgreSQL", "HIPAA Compliant"],
-    //   image: "/portproj6.jpg",
-    //   link: "#",
-    // }
+    }
   ];
 
-  // 4. The Filtering Logic
-  // If "All" is selected, show everything. Otherwise, only show projects matching the category.
+  //  The Filtering Logic
   const filteredProjects = projects.filter(
     (project) => activeCategory === "All" || project.category === activeCategory
   );
@@ -86,8 +64,8 @@ export default function PortfolioGrid() {
               onClick={() => setActiveCategory(category)}
               className={`rounded-full px-6 py-2.5 font-inter text-sm font-semibold transition-all duration-300 ${
                 activeCategory === category
-                  ? "bg-purple-700 text-white shadow-md" // Active state
-                  : "bg-gray-50 text-gray-600 hover:bg-gray-100 hover:text-purple-700" // Inactive state
+                  ? "bg-brand-purple text-white shadow-md" // Active state
+                  : "bg-brand-purple/10 text-gray-600  hover:text-brand-purple" // Inactive state
               }`}
             >
               {category}
@@ -113,7 +91,7 @@ export default function PortfolioGrid() {
                 />
                 
                 {/* Floating Category Badge (Top Left) */}
-                <div className="absolute left-4 top-4 z-10 rounded-full bg-white/90 px-3 py-1 font-inter text-xs font-bold text-gray-900 shadow-sm backdrop-blur-sm">
+                <div className="absolute left-4 top-4 z-10 rounded-full bg-white/90 px-3 py-1 font-inter text-xs font-bold text-brand-indigo shadow-sm backdrop-blur-sm">
                   {project.category}
                 </div>
 
@@ -125,24 +103,13 @@ export default function PortfolioGrid() {
 
               {/* Card Content Area */}
               <div className="flex flex-1 flex-col p-6 sm:p-8">
-                <h3 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-purple-700">
+                <h3 className="mb-3 font-syne text-xl font-bold text-brand-indigo transition-colors group-hover:text-brand-purple">
                   {project.title}
                 </h3>
                 <p className="mb-6 flex-1 font-inter text-sm text-gray-600 leading-relaxed">
                   {project.description}
                 </p>
 
-                {/* Tech Stack Tags (Bottom of card) */}
-                <div className="hidden flex-wrap gap-2 pt-4 border-t border-gray-50">
-                  {project.tech.map((tech, techIndex) => (
-                    <span 
-                      key={techIndex}
-                      className="rounded-md bg-gray-50 px-2 py-1 font-inter text-xs font-medium text-gray-500"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
               </div>
             </Link>
           ))}

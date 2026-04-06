@@ -4,14 +4,14 @@ import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
 export default function ContactFAQ() {
-  // We initialize state with '0' so the very first question is open by default, matching your UI design!
+  // initialize state with '0' so the very first question is open by default!
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // FAQ data based on the questions in your UI design
+  // FAQ data
   const faqs = [
     {
       question: "How long does a typical project take?",
@@ -36,7 +36,6 @@ export default function ContactFAQ() {
   ];
 
   return (
-    // Light gray background to separate it from the white Map section above it
     <section className="bg-gray-50 py-16 lg:py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         
@@ -45,7 +44,7 @@ export default function ContactFAQ() {
           <h2 className="font-syne text-sm font-bold uppercase tracking-wider text-brand-purple bg-brand-purple/10 w-fit mb-4 mx-auto py-2 px-3 rounded-lg">
             FAQ
           </h2>
-          <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+          <h3 className="font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl mb-4">
             Frequently Asked Questions
           </h3>
           <p className="font-inter text-lg text-gray-600">
@@ -68,7 +67,7 @@ export default function ContactFAQ() {
                   onClick={() => toggleFAQ(index)}
                   className="flex w-full items-center justify-between gap-6 p-6 text-left sm:p-8"
                 >
-                  <span className={`font-syne text-lg font-bold transition-colors ${isOpen ? "text-brand-purple" : "text-black"}`}>
+                  <span className={`font-syne text-lg font-bold transition-colors ${isOpen ? "text-brand-purple" : "text-brand-indigo"}`}>
                     {faq.question}
                   </span>
                   

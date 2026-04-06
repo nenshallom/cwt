@@ -1,5 +1,4 @@
 import ContactForm from "@/components/contact/ContactForm";
-// import ContactMap from "@/components/contact/ContactMap";
 import ContactFAQ from "@/components/contact/ContactFAQ"; 
 
 export const metadata = {
@@ -11,7 +10,6 @@ export default function ContactPage() {
   return (
     <>
       <ContactForm />
-      {/* <ContactMap /> */}
       <ContactFAQ /> 
     </>
   );

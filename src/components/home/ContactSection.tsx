@@ -5,29 +5,28 @@ import Link from "next/link";
 import { FiMail, FiPhone, FiMapPin, FiArrowRight, FiSend, FiCheckCircle, FiAlertCircle } from "react-icons/fi";
 
 export default function ContactSection() {
-  // 1. Setup state to hold the form data
+  // Setup state to hold the form data
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: ""
   });
   
-  // 2. Setup state to track submission status
+  // Setup state to track submission status
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const maxChars = 500;
 
-  // 3. Handle typing in the inputs
+  // Handle typing in the inputs
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({ ...prev, [e.target.id]: e.target.value }));
   };
 
-  // 4. Handle hitting the submit button
+  //  Handle the submit button
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
 
     try {
-      // Reusing the exact same API route!
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -54,7 +53,7 @@ export default function ContactSection() {
       icon: <FiMail className="h-6 w-6" />,
       label: "Email",
       value: "codewarriorstech@gmail.com ",
-      href: "mailto:codewarriorstech@gmail.com", // Updated to act as a real mailto link
+      href: "mailto:codewarriorstech@gmail.com", 
     },
     {
       icon: <FiPhone className="h-6 w-6" />,
@@ -76,12 +75,12 @@ export default function ContactSection() {
         
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           
-          {/* LEFT COLUMN: Text & Contact Info */}
+          {/* LEFT COLUMN */}
           <div>
             <h2 className="font-syne text-sm font-bold uppercase w-fit tracking-wider text-brand-purple py-2 px-3 bg-brand-purple/10 rounded-lg mb-4">
               Contact Us
             </h2>
-            <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl leading-tight">
+            <h3 className="font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl leading-tight">
               Let's Build For <span className="text-brand-purple">Your</span> Business Together
             </h3>
             <p className="mt-6 font-inter text-lg text-gray-600 leading-relaxed max-w-lg mb-10">
@@ -108,7 +107,7 @@ export default function ContactSection() {
             </div>
             <Link 
               href="/contact"
-              className="flex gap-3 items-center font-bold text-black hover:text-purple-700 mt-4"
+              className="flex gap-3 items-center font-bold text-brand-indigo hover:text-purple-700 mt-4"
             >
               Visit full contact page
               <FiArrowRight className="transition-transform hover:translate-x-1" />
@@ -200,12 +199,11 @@ export default function ContactSection() {
                 </div>
               )}
               {status === "error" && (
-                <div className="flex items-center gap-2 p-4 mt-4 text-red-700 bg-red-50 rounded-lg border border-red-200">
+                <div className="flex items-center gap-2 p-4 mt-4 text-brand-magenta bg-red-50 rounded-lg border border-red-200">
                   <FiAlertCircle className="h-5 w-5" />
                   <span className="font-inter text-sm font-medium">Error sending message. Please try again.</span>
                 </div>
               )}
-
             </form>
           </div>
 

@@ -87,14 +87,14 @@ export default function CareersSection() {
             <h2 className="font-syne text-sm font-bold uppercase w-fit tracking-wider text-brand-purple py-2 px-3 bg-brand-purple/10 rounded-lg mb-4">
               We're Hiring
             </h2>
-            <h3 className="font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl leading-tight">
+            <h3 className="font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl leading-tight">
               Join Our Team of <span className="text-brand-purple">Innovators</span>
             </h3>
             <p className="mt-6 font-inter text-lg text-gray-600 leading-relaxed max-w-lg">
               We're looking for passionate individuals who want to make an impact. Work on exciting projects, grow your skills, and be part of a collaborative team.
             </p>
 
-            {/* Perks Grid: 1 col on mobile, 2 cols on slightly larger screens */}
+            {/* Perks Grid */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {perks.map((perk, index) => (
                 <div key={index} className="flex items-center gap-3">
@@ -124,7 +124,7 @@ export default function CareersSection() {
               >
                 <div>
                   {/* Job Title */}
-                  <h4 className="font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-brand-purple">
+                  <h4 className="font-syne text-xl font-bold text-brand-indigo transition-colors group-hover:text-brand-purple">
                     {job.title}
                   </h4>
                   

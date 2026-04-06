@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { FiCloud, FiSmartphone, FiLink, FiWifi } from "react-icons/fi";
-import { SquareCode, Brain, MoveRight } from 'lucide-react';
+import { FiCloud, FiSmartphone } from "react-icons/fi";
+import { SquareCode, MoveRight } from 'lucide-react';
 
 export default function ServicesSection() {
   const services = [
@@ -25,24 +25,6 @@ export default function ServicesSection() {
       color: "bg-[#7C3AED]/10 text-[#7C3AED] group-hover:bg-[#7C3AED] group-hover:text-white",
       href: "/services/training-and-tutoring",
     }
-    // {
-    //   title: "Artificial Intelligence",
-    //   description: "Advanced AI integration to automate processes and provide intelligent insights for growth.",
-    //   icon: <Brain className="h-6 w-6" />,
-    //   color: "bg-teal-50 text-teal-600 group-hover:bg-teal-600 group-hover:text-white",
-    // },
-    // {
-    //   title: "Blockchain",
-    //   description: "Secure and transparent decentralized solutions to revolutionize your digital transactions.",
-    //   icon: <FiLink className="h-6 w-6" />,
-    //   color: "bg-amber-50 text-amber-600 group-hover:bg-amber-600 group-hover:text-white", 
-    // },
-    // {
-    //   title: "Internet of Things",
-    //   description: "Connecting devices and systems for smarter, automated, and data-driven operations.",
-    //   icon: <FiWifi className="h-6 w-6" />,
-    //   color: "bg-rose-50 text-rose-600 group-hover:bg-rose-600 group-hover:text-white",
-    // }
   ];
 
   return (
@@ -54,7 +36,7 @@ export default function ServicesSection() {
           <h2 className="font-syne text-sm font-bold uppercase w-fit mx-auto tracking-wider text-[#7C3AED] py-2 px-3 bg-[#7C3AED]/10 rounded-lg">
             Our Services
           </h2>
-          <h3 className="mt-4 font-syne text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h3 className="mt-4 font-syne text-3xl font-bold tracking-tight text-brand-indigo sm:text-4xl">
             What We Offer
           </h3>
           <p className="mt-4 font-inter text-lg text-gray-600">
@@ -76,7 +58,7 @@ export default function ServicesSection() {
                 {service.icon}
               </div>
 
-              <h4 className="mb-3 font-syne text-xl font-bold text-gray-900 transition-colors group-hover:text-[#7C3AED]">
+              <h4 className="mb-3 font-syne text-xl font-bold text-brand-indigo transition-colors group-hover:text-[#7C3AED]">
                 {service.title}
               </h4>
 
@@ -88,7 +70,7 @@ export default function ServicesSection() {
 
         </div>
 
-        {/* VIEW ALL BUTTON (Polished to match UI) */}
+        {/* VIEW ALL BUTTON */}
         <div className="hidden justify-center mt-12 w-full">
           <Link href="/services">
             <button className="flex gap-3 rounded-lg bg-blue-600 px-8 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-blue-700">

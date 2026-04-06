@@ -1,10 +1,7 @@
 import ServicesHero from "@/components/services/ServicesHero";
-// import ServicesExpertise from "@/components/services/ServicesExpertise";
 import ServicesWorkflow from "@/components/services/ServicesWorkflow";
 import ServicesSection from "@/components/home/ServicesSection";
-// import ServicesTechStack from "@/components/services/ServicesTechStack";
 import PortfolioCTA from "@/components/portfolio/PortfolioCTA"; 
-// import ServicesCTA from "@/components/services/ServicesCTA";
 
 export const metadata = {
   title: "Our Services | Code Warriors Tech",
@@ -15,10 +12,8 @@ export default function ServicesPage() {
   return (
     <>
       <ServicesHero />
-      {/* <ServicesExpertise /> */}
       <ServicesSection />
       <ServicesWorkflow />
-      {/* <ServicesTechStack /> */}
       <PortfolioCTA />
     </>
   );
