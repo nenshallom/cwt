@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { 
   FiChevronRight, 
@@ -9,19 +10,65 @@ import {
   FiFacebook,
   FiInstagram,
   FiLinkedin,
-  FiSend
+  FiSend,
+  FiCheckCircle,
+  FiAlertCircle
 } from "react-icons/fi";
 import { FaTiktok, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function ContactForm() {
+  // 1. Setup state to hold the form data
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    service: "Select a service",
+    message: ""
+  });
+
+  // 2. Setup state to track submission status
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  // 3. Handle typing in the inputs
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData(prev => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+
+  // 4. Handle hitting the submit button
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+
+    try {
+      // NOTE: We are sending this to /api/discuss to bypass ad blockers!
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        // Clear the form fields
+        setFormData({ name: "", email: "", phone: "", company: "", service: "Select a service", message: "" });
+        // Hide the success message after 5 seconds
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      setStatus("error");
+    }
+  };
+
   return (
     <section className="relative overflow-hidden bg-white pb-16 lg:pt-16 lg:pb-24">
       <div className="mx-auto max-w-[95rem] px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* HEADER AREA */}
-        <div className=" max-w-[95rem]  mb-16">
-          {/* Breadcrumbs */}
+        <div className="max-w-[95rem] mb-16">
           <nav className="mb-10 flex items-center gap-2 text-sm font-medium text-gray-500">
             <Link href="/" className="hover:text-brand-purple transition-colors">Home</Link>
             <FiChevronRight className="h-4 w-4" />
@@ -85,25 +132,25 @@ export default function ContactForm() {
             <div className="mt-4">
               <h4 className="font-syne text-lg font-bold text-gray-900 mb-4">Follow Us</h4>
               <div className="flex gap-4 flex-wrap">
-                            <a href="https://www.facebook.com/codewariors02" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
-                              <FiFacebook className="h-4 w-4" />
-                            </a>
-                            <a href="https://x.com/codewarriors02?t=YsAvpmq0Uix4pQETxEKMTw&s=09 " className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
-                              <FaXTwitter className="h-4 w-4" /> {/* Represents X */}
-                            </a>
-                            <a href="https://www.instagram.com/code_warriors_team_ " className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
-                              <FiInstagram className="h-4 w-4" />
-                            </a>
-                            <a href="https://www.linkedin.com/company/code-warriors-tech/" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
-                              <FiLinkedin className="h-4 w-4" />
-                            </a>
-                            <a href="https://www.tiktok.com/@code_warriors_team" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
-                              <FaTiktok className="h-4 w-4" />
-                            </a>
-                            <a href=" https://youtube.com/@codewarriorstech" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
-                              <FaYoutube className="h-4 w-4" />
-                            </a>
-                          </div>
+                <a href="https://www.facebook.com/codewariors02" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                  <FiFacebook className="h-4 w-4" />
+                </a>
+                <a href="https://x.com/codewarriors02" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                  <FaXTwitter className="h-4 w-4" /> 
+                </a>
+                <a href="https://www.instagram.com/code_warriors_team_" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                  <FiInstagram className="h-4 w-4" />
+                </a>
+                <a href="https://www.linkedin.com/company/code-warriors-tech/" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                  <FiLinkedin className="h-4 w-4" />
+                </a>
+                <a href="https://www.tiktok.com/@code_warriors_team" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                  <FaTiktok className="h-4 w-4" />
+                </a>
+                <a href="https://youtube.com/@codewarriorstech" className="rounded-md bg-brand-purple/10 p-2.5 text-brand-purple transition-colors hover:bg-brand-purple hover:text-white">
+                  <FaYoutube className="h-4 w-4" />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -112,33 +159,33 @@ export default function ContactForm() {
             <h3 className="font-syne text-2xl font-bold text-gray-900 mb-2">Send Us a Message</h3>
             <p className="font-inter text-sm text-gray-500 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
 
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="mb-2 block font-inter text-sm font-medium text-gray-700">Full Name <span className="text-red-500">*</span></label>
-                  <input type="text" id="name" placeholder="John Doe" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" required />
+                  <input type="text" id="name" value={formData.name} onChange={handleChange} placeholder="John Doe" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" required disabled={status === "loading"} />
                 </div>
                 <div>
                   <label htmlFor="email" className="mb-2 block font-inter text-sm font-medium text-gray-700">Email Address <span className="text-red-500">*</span></label>
-                  <input type="email" id="email" placeholder="john@example.com" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" required />
+                  <input type="email" id="email" value={formData.email} onChange={handleChange} placeholder="john@example.com" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" required disabled={status === "loading"} />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="phone" className="mb-2 block font-inter text-sm font-medium text-gray-700">Phone Number <span className="text-gray-400 font-normal">(Optional)</span></label>
-                  <input type="tel" id="phone" placeholder="+234 XXX XXXX" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" />
+                  <input type="tel" id="phone" value={formData.phone} onChange={handleChange} placeholder="+234 XXX XXXX" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" disabled={status === "loading"} />
                 </div>
                 <div>
                   <label htmlFor="company" className="mb-2 block font-inter text-sm font-medium text-gray-700">Company <span className="text-gray-400 font-normal">(Optional)</span></label>
-                  <input type="text" id="company" placeholder="Your company name" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" />
+                  <input type="text" id="company" value={formData.company} onChange={handleChange} placeholder="Your company name" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" disabled={status === "loading"} />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="service" className="mb-2 block font-inter text-sm font-medium text-gray-700">Service Interest</label>
-                <select id="service" className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400 appearance-none cursor-pointer">
-                  <option>Select a service</option>
+                <select id="service" value={formData.service} onChange={handleChange} className="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400 appearance-none cursor-pointer" disabled={status === "loading"}>
+                  <option disabled>Select a service</option>
                   <option>Software Development</option>
                   <option>SaaS Solutions</option>
                   <option>Mobile Apps</option>
@@ -149,14 +196,28 @@ export default function ContactForm() {
 
               <div>
                 <label htmlFor="message" className="mb-2 block font-inter text-sm font-medium text-gray-700">Message <span className="text-red-500">*</span></label>
-                <textarea id="message" rows={5} placeholder="Tell us about your project" className="w-full resize-none rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" required></textarea>
+                <textarea id="message" value={formData.message} onChange={handleChange} rows={5} placeholder="Tell us about your project" className="w-full resize-none rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-inter text-sm outline-none transition-all focus:border-purple-400 focus:bg-white focus:ring-1 focus:ring-purple-400" required disabled={status === "loading"}></textarea>
               </div>
 
               {/* Submit Button */}
-              <button type="submit" className="group flex w-full items-center justify-center gap-2 rounded-lg bg-purple-700 px-8 py-4 font-inter text-base font-bold text-white shadow-md transition-all hover:bg-purple-500 hover:shadow-lg">
-                Send Message
-                <FiSend className="h-5 w-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+              <button type="submit" disabled={status === "loading"} className="group flex w-full items-center justify-center gap-2 rounded-lg bg-purple-700 px-8 py-4 font-inter text-base font-bold text-white shadow-md transition-all hover:bg-purple-500 hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed">
+                {status === "loading" ? "Sending..." : "Send Message"}
+                <FiSend className={`h-5 w-5 transition-transform ${status === "loading" ? "animate-pulse" : "group-hover:-translate-y-1 group-hover:translate-x-1"}`} />
               </button>
+
+              {/* Feedback Messages */}
+              {status === "success" && (
+                <div className="flex items-center gap-2 p-4 mt-4 text-green-700 bg-green-50 rounded-lg border border-green-200">
+                  <FiCheckCircle className="h-5 w-5" />
+                  <span className="font-inter text-sm font-medium">Your message has been sent successfully! We will be in touch soon.</span>
+                </div>
+              )}
+              {status === "error" && (
+                <div className="flex items-center gap-2 p-4 mt-4 text-red-700 bg-red-50 rounded-lg border border-red-200">
+                  <FiAlertCircle className="h-5 w-5" />
+                  <span className="font-inter text-sm font-medium">There was an error sending your message. Please try again.</span>
+                </div>
+              )}
             </form>
 
           </div>

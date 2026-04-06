@@ -1,24 +1,25 @@
 import Image from "next/image";
 import { FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function AboutTeam() {
   const team = [
     {
-      name: "ABDULRAHMAN SODIQ",
+      name: "Sadiq Abdulrahman",
       role: "CEO",
       image: "/ceo.jpeg", 
       linkedin: "https://linkedin.com/in/a",
       twitter: "https://twitter.com/adebayo",
     },
     {
-      name: "MUCTAR MOHAMMED",
+      name: "Ogala Muctar  Mohammed",
       role: "CTO",
       image: "/cto.jpeg",
       linkedin: "https://linkedin.com/in/chioma",
       twitter: "https://twitter.com/chioma",
     },
     {
-      name: "Halima Sodiq",
+      name: "Abdulrahman Halima",
       role: "CFO",
       image: "/cfo.jpeg",
       linkedin: "https://linkedin.com/in/tunde",
@@ -91,13 +92,13 @@ export default function AboutTeam() {
                     <FiLinkedin className="h-5 w-5" />
                   </a>
                   <a href={person.twitter} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition-colors hover:bg-black hover:scale-110">
-                    <FiTwitter className="h-5 w-5" /> 
+                    <FaXTwitter className="h-5 w-5" /> 
                   </a>
                 </div>
 
                 {/* 4. Name & Role */}
                 <div className="absolute bottom-6 left-6 right-6 z-20 text-left  transition-all duration-300 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
-                  <h4 className="font-syne text-2xl font-bold text-white leading-tight">
+                  <h4 className="font-syne text-2xl uppercase font-bold text-white leading-tight">
                     {person.name}
                   </h4>
                   <p className="mt-1 font-inter text-sm text-white font-bold uppercase tracking-widest">
