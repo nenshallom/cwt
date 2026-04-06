@@ -88,9 +88,9 @@ export default function Hero() {
             </div>
 
             {/* Floating Stats Card */}
-            <div className="absolute -bottom-6 -left-6 rounded-xl bg-white p-2 md:p-6 shadow-xl border border-gray-100 sm:-bottom-8 sm:-left-8">
+            <div className="absolute -bottom-6 -left-6 rounded-xl bg-white p-3 md:p-6 shadow-xl border border-gray-100 sm:-bottom-8 sm:-left-8">
               <div className="flex items-center gap-1">
-                <div className="flex gap-3 sm:gap-2">
+                <div className="flex gap-2 md:gap-5">
                 <div>
                   <p className="font-syne text-[13px] sm:text-2xl lg:text-3xl font-extrabold text-[#7C3AED]">24/7</p>
                   <p className="font-inter text-[10px] sm:text-sm font-medium text-gray-600 uppercase tracking-wide mt-1">Support</p>
